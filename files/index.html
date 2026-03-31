@@ -3,6 +3,567 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About AAU | American Allied University</title>
+<meta name="description" content="American Allied University is an online professional certificate provider incorporated in the United States, committed to accessible, career-focused education for global learners.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--navy:#0d2240;--navy-dark:#081628;--navy-mid:#163055;--gold:#b5892a;--gold-light:#d4a84b;--gold-pale:#f8f1e4;--white:#ffffff;--off:#f5f3ef;--text:#1a1a28;--muted:#6b6b80;--border:#ddd8ce;}
+html{scroll-behavior:smooth;scroll-padding-top:76px;}
+body{font-family:"Source Sans 3",sans-serif;background:var(--white);color:var(--text);<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Programs | American Allied University</title>
+<meta name="description" content="AAU offers professional certificate programs via Coursera Classroom and is developing graduate degree programs including MBA, M.Ed., and MOL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--navy:#0d2240;--navy-dark:#081628;--navy-mid:#163055;--gold:#b5892a;--gold-light:#d4a84b;--gold-pale:#f8f1e4;--white:#ffffff;--off:#f5f3ef;--text:#1a1a28;--muted:#6b6b80;--border:#ddd8ce;}
+html{scroll-behavior:smooth;scroll-padding-top:76px;}
+body{font-family:"Source Sans 3",sans-serif;background:var(--white);color:var(--text);overflow-x:hidden;}
+.container{max-width:1200px;margin:0 auto;padding:0 2rem;}
+h1{font-family:"Libre Baskerville",serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:700;line-height:1.1;color:var(--navy);letter-spacing:-0.01em;}
+h2{font-family:"Libre Baskerville",serif;font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:700;line-height:1.2;color:var(--navy);margin-bottom:0.85rem;letter-spacing:-0.01em;}
+h2 em{font-style:italic;}
+h3{font-family:"Libre Baskerville",serif;font-size:1.15rem;font-weight:700;color:var(--navy);line-height:1.3;}
+.sec-label{font-size:0.62rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;display:block;}
+.sec-intro{font-size:0.95rem;font-weight:300;color:var(--muted);line-height:1.8;max-width:580px;margin-bottom:2.5rem;}
+section{padding:5rem 0;}
+/* NAV */
+nav{background:var(--navy);height:72px;display:flex;align-items:center;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,0.2);}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;width:100%;}
+.logo{display:flex;align-items:center;gap:0.85rem;text-decoration:none;}
+.logo-name{font-family:"Libre Baskerville",serif;font-size:0.95rem;font-weight:700;color:var(--white);line-height:1.2;}
+.logo-sub{font-size:0.55rem;font-weight:400;color:rgba(255,255,255,0.45);letter-spacing:0.12em;text-transform:uppercase;}
+.nav-links{display:none;list-style:none;gap:0.25rem;}
+.nav-item{position:relative;list-style:none;}
+.nav-item>a{font-size:0.78rem;font-weight:600;color:rgba(255,255,255,0.82);text-decoration:none;letter-spacing:0.03em;display:flex;align-items:center;gap:0.3rem;padding:0.4rem 0.6rem;border-radius:3px;transition:all 0.2s;white-space:nowrap;}
+.nav-item>a:hover,.nav-item:hover>a{color:var(--gold-light);background:rgba(255,255,255,0.06);}
+.nav-item>a .caret{font-size:0.5rem;opacity:0.6;transition:transform 0.2s;}
+.nav-item:hover>a .caret{transform:rotate(180deg);}
+.dropdown{position:absolute;top:calc(100% + 8px);left:0;background:var(--white);border-top:3px solid var(--gold);box-shadow:0 12px 40px rgba(13,34,64,0.15);min-width:560px;opacity:0;visibility:hidden;transform:translateY(8px);transition:all 0.22s ease;z-index:300;}
+.dropdown.wide{min-width:660px;}
+.nav-item:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+.dropdown-cols{display:grid;grid-template-columns:1fr 1fr;}
+.dropdown-col{padding:1.5rem;border-right:1px solid var(--border);}
+.dropdown-col:last-child{border-right:none;}
+.dropdown-col-label{font-size:0.58rem;font-weight:700;color:var(--gold);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:0.85rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);}
+.dropdown-link{display:block;text-decoration:none;padding:0.45rem 0;border-bottom:1px solid rgba(0,0,0,0.04);transition:all 0.15s;}
+.dropdown-link:last-child{border-bottom:none;}
+.dropdown-link:hover{padding-left:4px;}
+.dropdown-link:hover .dl-title{color:var(--gold);}
+.dl-title{font-size:0.82rem;font-weight:600;color:var(--navy);line-height:1.3;transition:color 0.15s;}
+.dl-desc{font-size:0.7rem;color:var(--muted);line-height:1.4;margin-top:0.1rem;}
+.dropdown-cta{background:var(--gold-pale);border-top:1px solid var(--border);padding:0.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.dropdown-cta p{font-size:0.76rem;font-weight:600;color:var(--navy);}
+.dropdown-cta a{font-size:0.7rem;font-weight:700;color:var(--white);background:var(--navy);padding:0.38rem 0.9rem;border-radius:3px;text-decoration:none;transition:background 0.2s;white-space:nowrap;}
+.dropdown-cta a:hover{background:var(--gold);}
+.nav-right{display:flex;align-items:center;gap:0.75rem;}
+.nav-apply{padding:0.52rem 1.25rem;background:var(--gold);color:var(--white);font-size:0.76rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background 0.2s;white-space:nowrap;}
+.nav-apply:hover{background:var(--gold-light);}
+.nav-menu-btn{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
+.nav-menu-btn span{display:block;width:22px;height:2px;background:rgba(255,255,255,0.8);transition:all 0.3s;}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:var(--navy);z-index:199;flex-direction:column;padding:1.5rem 2rem;overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{display:block;font-size:1.05rem;font-weight:500;color:rgba(255,255,255,0.85);text-decoration:none;padding:1rem 0;border-bottom:1px solid rgba(255,255,255,0.08);transition:color 0.2s;}
+.mobile-menu a:hover{color:var(--gold-light);}
+.mob-apply{margin-top:1.5rem;display:block;padding:1rem;background:var(--gold);color:var(--white);text-align:center;font-weight:700;font-size:0.88rem;letter-spacing:0.08em;text-transform:uppercase;border-radius:3px;}
+/* PAGE HERO */
+.page-hero{background:var(--navy);padding:4rem 0 3.5rem;position:relative;overflow:hidden;}
+.page-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(13,34,64,0.92),rgba(13,34,64,0.92)),url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80") center/cover no-repeat;}
+.page-hero-inner{position:relative;z-index:1;}
+.page-hero .sec-label{color:var(--gold-light);}
+.page-hero h1{color:var(--white);margin-bottom:1rem;}
+.page-hero h1 em{color:var(--gold-light);}
+.page-hero p{font-size:1rem;font-weight:300;color:rgba(255,255,255,0.72);line-height:1.8;max-width:580px;}
+/* BREADCRUMB */
+.breadcrumb{background:var(--gold-pale);border-bottom:1px solid var(--border);padding:0.6rem 0;}
+.breadcrumb-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;gap:0.5rem;font-size:0.72rem;color:var(--muted);}
+.breadcrumb a{color:var(--navy);text-decoration:none;font-weight:500;}
+.breadcrumb a:hover{color:var(--gold);}
+.breadcrumb span{color:var(--muted);}
+/* BUTTONS */
+.btn-navy{display:inline-flex;align-items:center;gap:0.4rem;padding:0.85rem 2rem;background:var(--navy);color:var(--white);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;border:2px solid var(--navy);transition:all 0.2s;}
+.btn-navy:hover{background:var(--navy-mid);}
+.btn-gold{display:inline-flex;align-items:center;gap:0.4rem;padding:0.85rem 2rem;background:var(--gold);color:var(--white);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;border:2px solid var(--gold);transition:all 0.2s;}
+.btn-gold:hover{background:var(--gold-light);border-color:var(--gold-light);}
+.btn-outline{display:inline-flex;align-items:center;gap:0.4rem;padding:0.85rem 2rem;background:transparent;color:var(--navy);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;border:2px solid var(--navy);transition:all 0.2s;}
+.btn-outline:hover{background:var(--navy);color:var(--white);}
+/* CARDS */
+.card{background:var(--white);border:1px solid var(--border);border-top:4px solid var(--navy);padding:2rem;border-radius:2px;transition:all 0.3s;}
+.card:hover{box-shadow:0 8px 28px rgba(13,34,64,0.1);transform:translateY(-3px);border-top-color:var(--gold);}
+.card-gold{border-top-color:var(--gold);}
+/* FOOTER */
+footer{background:#060f1c;padding:4rem 0 0;}
+.footer-grid{max-width:1200px;margin:0 auto;padding:0 2rem 3rem;display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:3rem;border-bottom:1px solid rgba(255,255,255,0.08);}
+.footer-brand-name{font-family:"Libre Baskerville",serif;font-size:0.95rem;font-weight:700;color:var(--white);margin-bottom:0.25rem;}
+.footer-brand-sub{font-size:0.58rem;color:rgba(255,255,255,0.28);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.85rem;}
+.footer-brand-desc{font-size:0.76rem;color:rgba(255,255,255,0.4);line-height:1.75;max-width:280px;}
+.footer-col h5{font-size:0.6rem;font-weight:700;color:var(--gold-light);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1rem;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.5rem;}
+.footer-col a{font-size:0.76rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;line-height:1.4;}
+.footer-col a:hover{color:var(--gold-light);}
+.footer-legal{max-width:1200px;margin:0 auto;padding:1.5rem 2rem;border-bottom:1px solid rgba(255,255,255,0.06);}
+.footer-legal p{font-size:0.68rem;color:rgba(255,255,255,0.28);line-height:1.65;}
+.footer-legal a{color:rgba(255,255,255,0.4);text-decoration:underline;}
+.footer-bottom{max-width:1200px;margin:0 auto;padding:1.25rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.footer-copy{font-size:0.65rem;color:rgba(255,255,255,0.25);}
+.footer-links-row{display:flex;gap:1.5rem;flex-wrap:wrap;}
+.footer-links-row a{font-size:0.65rem;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s;}
+.footer-links-row a:hover{color:var(--gold-light);}
+/* RESPONSIVE */
+@media(min-width:768px){.nav-links{display:flex;}.nav-menu-btn{display:none;}}
+@media(max-width:960px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.nav-inner{padding:0 1.25rem;}.container{padding:0 1.25rem;}section{padding:3.5rem 0;}.footer-grid{grid-template-columns:1fr;gap:2rem;padding-bottom:2rem;}.footer-bottom{flex-direction:column;text-align:center;}.footer-links-row{justify-content:center;}}
+</style>
+
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <svg width="48" height="48" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+        <path d="M290 420 Q260 380 240 340 Q225 305 218 270 Q214 245 215 220" stroke="#b5892a" stroke-width="2" fill="none"/>
+        <ellipse cx="268" cy="388" rx="14" ry="7" fill="#b5892a" transform="rotate(-40 268 388)"/>
+        <ellipse cx="252" cy="362" rx="13" ry="6" fill="#b5892a" transform="rotate(-50 252 362)"/>
+        <ellipse cx="240" cy="335" rx="13" ry="6" fill="#b5892a" transform="rotate(-55 240 335)"/>
+        <ellipse cx="230" cy="308" rx="12" ry="6" fill="#b5892a" transform="rotate(-60 230 308)"/>
+        <ellipse cx="278" cy="375" rx="12" ry="6" fill="#c9a84c" transform="rotate(-20 278 375)"/>
+        <ellipse cx="262" cy="350" rx="11" ry="5" fill="#c9a84c" transform="rotate(-25 262 350)"/>
+        <path d="M390 420 Q420 380 440 340 Q455 305 462 270 Q466 245 465 220" stroke="#b5892a" stroke-width="2" fill="none"/>
+        <ellipse cx="412" cy="388" rx="14" ry="7" fill="#b5892a" transform="rotate(40 412 388)"/>
+        <ellipse cx="428" cy="362" rx="13" ry="6" fill="#b5892a" transform="rotate(50 428 362)"/>
+        <ellipse cx="440" cy="335" rx="13" ry="6" fill="#b5892a" transform="rotate(55 440 335)"/>
+        <ellipse cx="450" cy="308" rx="12" ry="6" fill="#b5892a" transform="rotate(60 450 308)"/>
+        <ellipse cx="402" cy="375" rx="12" ry="6" fill="#c9a84c" transform="rotate(20 402 375)"/>
+        <ellipse cx="418" cy="350" rx="11" ry="5" fill="#c9a84c" transform="rotate(25 418 350)"/>
+        <rect x="328" y="420" width="24" height="12" rx="2" fill="#b5892a"/>
+        <path d="M340 68 L450 68 L450 208 Q450 300 340 358 Q230 300 230 208 L230 68 Z" fill="#b5892a"/>
+        <path d="M340 75 L443 75 L443 207 Q443 294 340 349 Q237 294 237 207 L237 75 Z" fill="#0d2240"/>
+        <line x1="237" y1="168" x2="443" y2="168" stroke="#b5892a" stroke-width="3"/>
+        <g transform="translate(340,258)"><line x1="0" y1="-32" x2="0" y2="32" stroke="#b5892a" stroke-width="2.5"/><path d="M0 -28 Q-36 -32 -52 -20 L-52 28 Q-36 18 0 22 Z" fill="none" stroke="#b5892a" stroke-width="2"/><path d="M0 -28 Q36 -32 52 -20 L52 28 Q36 18 0 22 Z" fill="none" stroke="#b5892a" stroke-width="2"/></g>
+        <g transform="translate(340,120)"><circle cx="0" cy="0" r="34" fill="none" stroke="#b5892a" stroke-width="2"/><ellipse cx="0" cy="0" rx="17" ry="34" fill="none" stroke="#b5892a" stroke-width="1.5"/><line x1="-34" y1="0" x2="34" y2="0" stroke="#b5892a" stroke-width="1.5"/><line x1="-30" y1="-17" x2="30" y2="-17" stroke="#b5892a" stroke-width="1.2"/><line x1="-30" y1="17" x2="30" y2="17" stroke="#b5892a" stroke-width="1.2"/><line x1="0" y1="-34" x2="0" y2="34" stroke="#b5892a" stroke-width="1.5"/></g>
+      </svg>
+      <div>
+        <div class="logo-name">American Allied University</div>
+        <div class="logo-sub">Online &middot; Global &middot; Career-Focused</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="programs.html">Academic Programs <span class="caret">&#9660;</span></a>
+        <div class="dropdown wide">
+          <div class="dropdown-cols">
+            <div class="dropdown-col"><div class="dropdown-col-label">Certificates &amp; Certifications</div>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Business &amp; Operations</div><div class="dl-desc">Project management, leadership, digital marketing</div></a>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Technology &amp; AI</div><div class="dl-desc">AI, data analytics, cybersecurity, Google Career Certificates</div></a>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Education &amp; Leadership</div><div class="dl-desc">Instructional skills, organizational management</div></a>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Healthcare &amp; Allied Health</div><div class="dl-desc">Health administration, patient care pathways</div></a>
+            </div>
+            <div class="dropdown-col"><div class="dropdown-col-label">Graduate Degrees (Planned)</div>
+              <a href="programs.html#grad" class="dropdown-link"><div class="dl-title">Master of Education (M.Ed.)</div><div class="dl-desc">Teaching, curriculum, educational leadership</div></a>
+              <a href="programs.html#grad" class="dropdown-link"><div class="dl-title">Master of Business Administration (MBA)</div><div class="dl-desc">Strategy, finance, operations, entrepreneurship</div></a>
+              <a href="programs.html#grad" class="dropdown-link"><div class="dl-title">Master of Organizational Leadership (MOL)</div><div class="dl-desc">Leadership development, change management</div></a>
+            </div>
+          </div>
+          <div class="dropdown-cta"><p>Not sure which program is right for you?</p><a href="admissions.html">Request Advising</a></div>
+        </div>
+      </li>
+      <li class="nav-item"><a href="about.html">About AAU <span class="caret">&#9660;</span></a>
+        <div class="dropdown">
+          <div class="dropdown-cols">
+            <div class="dropdown-col"><div class="dropdown-col-label">The Institution</div>
+              <a href="about.html" class="dropdown-link"><div class="dl-title">About American Allied University</div><div class="dl-desc">Who we are and what we stand for</div></a>
+              <a href="mission.html" class="dropdown-link"><div class="dl-title">Mission &amp; Vision</div><div class="dl-desc">Our purpose, values, and direction</div></a>
+            </div>
+            <div class="dropdown-col"><div class="dropdown-col-label">Connect</div>
+              <a href="contact.html" class="dropdown-link"><div class="dl-title">Contact Us</div><div class="dl-desc"><span class="__cf_email__" data-cfemail="cea7a0a8a18eafa3abbca7adafa0afa2a2a7abaae0bbbd">[email&#160;protected]</span></div></a>
+              <a href="admissions.html" class="dropdown-link"><div class="dl-title">Admissions</div><div class="dl-desc">Apply or request information</div></a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item"><a href="mission.html">Mission &amp; Vision</a></li>
+      <li class="nav-item"><a href="admissions.html">Become a Student</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="admissions.html" class="nav-apply">Apply Now</a>
+      <button class="nav-menu-btn" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="programs.html" onclick="toggleMenu()">Academic Programs</a>
+  <a href="about.html" onclick="toggleMenu()">About AAU</a>
+  <a href="mission.html" onclick="toggleMenu()">Mission &amp; Vision</a>
+  <a href="admissions.html" onclick="toggleMenu()">Become a Student</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact Us</a>
+  <a href="admissions.html" class="mob-apply" onclick="toggleMenu()">Apply Now</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner container">
+    <span class="sec-label">Academic Programs</span>
+    <h1>Programs of <em>Study</em></h1>
+    <p>AAU delivers high-quality higher education programs through technology, accessible to learners worldwide. Graduate degree programs are in development.</p>
+  </div>
+</div>
+<div class="breadcrumb"><div class="breadcrumb-inner"><a href="index.html">Home</a><span>/</span><span>Academic Programs</span></div></div>
+
+<section id="certs" style="background:var(--off);">
+  <div class="container">
+    <span class="sec-label">Available Now</span>
+    <h2>Certificates &amp; Certifications</h2>
+    <p class="sec-intro">Delivered through AAU's dedicated Coursera Classroom for Organizations — students are automatically enrolled into curated learning paths upon admission.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-bottom:2rem;">
+      <div class="card card-gold"><div style="font-size:0.6rem;font-weight:700;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.75rem;">Certificate Program</div><h3 style="margin-bottom:0.5rem;">Business &amp; Operations</h3><p style="font-size:0.82rem;color:var(--muted);line-height:1.65;margin-bottom:1.25rem;">Business operations, project management, entrepreneurship, leadership, management, and digital marketing skills.</p><div style="display:flex;gap:0.4rem;flex-wrap:wrap;"><span style="padding:0.2rem 0.65rem;border:1px solid var(--border);border-radius:100px;font-size:0.62rem;font-weight:600;color:var(--muted);">Certificate</span><span style="padding:0.2rem 0.65rem;border:1px solid var(--border);border-radius:100px;font-size:0.62rem;font-weight:600;color:var(--muted);">Self-Paced</span><span style="padding:0.2rem 0.65rem;border:1px solid var(--border);border-radius:100px;font-size:0.62rem;font-weight:600;color:var(--muted);">Online</span></div></div>
+      <div class="card card-gold"><div style="font-size:0.6rem;font-weight:700;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.75rem;">Certificate Program</div><h3 style="margin-bottom:0.5rem;">Technology &amp; Artificial Intelligence</h3><p style="font-size:0.82rem;color:var(--muted);line-height:1.65;margin-bottom:1.25rem;">AI fundamentals, data analytics, cybersecurity, information technology, and Google Career Certificates.</p><div style="display:flex;gap:0.4rem;flex-wrap:wrap;"><span style="padding:0.2rem 0.65rem;border:1px solid var(--border);border-radius:100px;font-size:0.62rem;font-weight:600;color:var(--muted);">Certificate</span><span style="padding:0.2rem 0.65rem;border:1px solid var(--border);border-radius:100px;font-size:0.62rem;font-weight:600;color:var(--muted);">Self-Paced</span><span style="padding:0.2rem 0.65rem;border:1px solid var(--border);border-radius:100px;font-size:0.62rem;font-weight:600;color:var(--muted);">Online</span></div></div>
+      <div class="card card-gold"><div style="font-size:0.6rem;font-weight:700;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.75rem;">Certificate Program</div><h3 style="margin-bottom:0.5rem;">Education &amp; Leadership</h3><p style="font-size:0.82rem;color:var(--muted);line-height:1.65;margin-bottom:1.25rem;">Leadership development, instructional skills, organizational management, and professional learning for educators.</p><div style="display:flex;gap:0.4rem;flex-wrap:wrap;"><span style="padding:0.2rem 0.65rem;border:1px solid var(--border);border-radius:100px;font-size:0.62rem;font-weight:600;color:var(--muted);">Certificate</span><span style="padding:0.2rem 0.65rem;border:1px solid var(--border);border-radius:100px;font-size:0.62rem;font-weight:600;color:var(--muted);">Self-Paced</span><span style="padding:0.2rem 0.65rem;border:1px solid var(--border);border-radius:100px;font-size:0.62rem;font-weight:600;color:var(--muted);">Online</span></div></div>
+      <div class="card card-gold"><div style="font-size:0.6rem;font-weight:700;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.75rem;">Certificate Program</div><h3 style="margin-bottom:0.5rem;">Healthcare &amp; Allied Health</h3><p style="font-size:0.82rem;color:var(--muted);line-height:1.65;margin-bottom:1.25rem;">Healthcare administration, patient care coordination, allied health pathways, and health operations management.</p><div style="display:flex;gap:0.4rem;flex-wrap:wrap;"><span style="padding:0.2rem 0.65rem;border:1px solid var(--border);border-radius:100px;font-size:0.62rem;font-weight:600;color:var(--muted);">Certificate</span><span style="padding:0.2rem 0.65rem;border:1px solid var(--border);border-radius:100px;font-size:0.62rem;font-weight:600;color:var(--muted);">Self-Paced</span><span style="padding:0.2rem 0.65rem;border:1px solid var(--border);border-radius:100px;font-size:0.62rem;font-weight:600;color:var(--muted);">Online</span></div></div>
+    </div>
+    <div style="background:var(--navy);border-radius:6px;padding:2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
+      <div><h3 style="color:var(--white);margin-bottom:0.35rem;">400+ Certificates &amp; Certifications Available</h3><p style="font-size:0.82rem;color:rgba(255,255,255,0.6);">Including Google Career Certificates, Project Management, Data Analytics, Cybersecurity, and more.</p></div>
+      <a href="admissions.html" class="btn-gold">Enroll Now &rarr;</a>
+    </div>
+    <p style="font-size:0.72rem;color:var(--muted);margin-top:0.85rem;line-height:1.55;">Certificate programs are not degree programs. Credits may not transfer to other institutions. Contact <a href="/cdn-cgi/l/email-protection#eb82858d84ab8a868e9982888a858a8787828e8fc59e98" style="color:var(--navy);"><span class="__cf_email__" data-cfemail="f39a9d959cb3929e96819a90929d929f9f9a9697dd8680">[email&#160;protected]</span></a> for full program details, tuition, and enrollment requirements.</p>
+  </div>
+</section>
+
+<section id="grad" style="background:var(--white);">
+  <div class="container">
+    <span class="sec-label">Planned Graduate Degrees</span>
+    <h2>Graduate Degree Programs</h2>
+    <p class="sec-intro">American Allied University is building a graduate learning model designed for working professionals, aspiring executives, educators, and organizational leaders. These programs are in development and not yet available for enrollment.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;">
+      <div class="card" style="border-top-color:var(--gold-light);"><div style="font-size:0.6rem;font-weight:700;color:var(--muted);letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.75rem;">Planned Program</div><h3 style="margin-bottom:0.6rem;">Master of Education (M.Ed.)</h3><p style="font-size:0.82rem;color:var(--muted);line-height:1.65;margin-bottom:1rem;">Designed for educators and instructional leaders who want to strengthen expertise in teaching, leadership, curriculum, and educational innovation.</p><span style="display:inline-block;padding:0.2rem 0.65rem;background:var(--off);border:1px solid var(--border);border-radius:2px;font-size:0.62rem;font-weight:600;color:var(--muted);">Future Enrollment</span></div>
+      <div class="card" style="border-top-color:var(--gold-light);"><div style="font-size:0.6rem;font-weight:700;color:var(--muted);letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.75rem;">Planned Program</div><h3 style="margin-bottom:0.6rem;">Master of Business Administration (MBA)</h3><p style="font-size:0.82rem;color:var(--muted);line-height:1.65;margin-bottom:1rem;">Built for current and future business leaders seeking advanced knowledge in strategy, management, operations, entrepreneurship, and organizational growth.</p><span style="display:inline-block;padding:0.2rem 0.65rem;background:var(--off);border:1px solid var(--border);border-radius:2px;font-size:0.62rem;font-weight:600;color:var(--muted);">Future Enrollment</span></div>
+      <div class="card" style="border-top-color:var(--gold-light);"><div style="font-size:0.6rem;font-weight:700;color:var(--muted);letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.75rem;">Planned Program</div><h3 style="margin-bottom:0.6rem;">Master of Organizational Leadership (MOL)</h3><p style="font-size:0.82rem;color:var(--muted);line-height:1.65;margin-bottom:1rem;">For professionals who want to lead teams and institutions with strength in leadership development, change management, communication, and executive decision-making.</p><span style="display:inline-block;padding:0.2rem 0.65rem;background:var(--off);border:1px solid var(--border);border-radius:2px;font-size:0.62rem;font-weight:600;color:var(--muted);">Future Enrollment</span></div>
+    </div>
+    <p style="font-size:0.72rem;color:var(--muted);margin-top:1.5rem;line-height:1.55;">Graduate degree programs are planned offerings and are not currently available for enrollment. Contact <a href="/cdn-cgi/l/email-protection#fb92959d94bb9a969e8992989a959a9797929e9fd58e88" style="color:var(--navy);"><span class="__cf_email__" data-cfemail="670e09010827060a02150e040609060b0b0e0203491214">[email&#160;protected]</span></a> to be notified when programs become available.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-name">American Allied University</div>
+      <div class="footer-brand-sub">Online &middot; Global</div>
+      <p class="footer-brand-desc">An online professional certificate provider delivering structured programs through a dedicated Coursera Classroom for Organizations.</p>
+      <p class="footer-brand-desc" style="margin-top:0.5rem;"><a href="/cdn-cgi/l/email-protection#4920272f260928242c3b202a2827282525202c2d673c3a" style="color:rgba(255,255,255,0.5);text-decoration:none;"><span class="__cf_email__" data-cfemail="b8d1d6ded7f8d9d5ddcad1dbd9d6d9d4d4d1dddc96cdcb">[email&#160;protected]</span></a> &middot; <a href="https://americanallied.us" style="color:rgba(255,255,255,0.5);text-decoration:none;">americanallied.us</a></p>
+    </div>
+    <div class="footer-col"><h5>Programs</h5><ul>
+      <li><a href="programs.html#certs">Business Administration</a></li>
+      <li><a href="programs.html#certs">Technology &amp; AI</a></li>
+      <li><a href="programs.html#certs">Education &amp; Leadership</a></li>
+      <li><a href="programs.html#certs">Allied Health Administration</a></li>
+      <li><a href="programs.html#grad">Graduate Degrees (Planned)</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Institution</h5><ul>
+      <li><a href="about.html">About AAU</a></li>
+      <li><a href="mission.html">Mission &amp; Vision</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Legal</h5><ul>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
+      <li><a href="programs.html">Program Catalog</a></li>
+      <li><a href="/cdn-cgi/l/email-protection#cba2a5ada48baaa6aeb9a2a8aaa5aaa7a7a2aeafe5beb8">Email Us</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal">
+    <p>American Allied University is an online professional certificate and development program provider incorporated in the United States. Current offerings are certificate programs delivered through AAU's dedicated Coursera Classroom for Organizations. Graduate degree programs are planned for a future launch date. Certificate programs are not degree programs and credits may not transfer. Contact <a href="/cdn-cgi/l/email-protection#3950575f567958545c4b505a5857585555505c5d174c4a"><span class="__cf_email__" data-cfemail="a4cdcac2cbe4c5c9c1d6cdc7c5cac5c8c8cdc1c08ad1d7">[email&#160;protected]</span></a> for full details.</p>
+  </div>
+  <div cloverflow-x:hidden;}
+.container{max-width:1200px;margin:0 auto;padding:0 2rem;}
+h1{font-family:"Libre Baskerville",serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:700;line-height:1.1;color:var(--navy);letter-spacing:-0.01em;}
+h2{font-family:"Libre Baskerville",serif;font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:700;line-height:1.2;color:var(--navy);margin-bottom:0.85rem;letter-spacing:-0.01em;}
+h2 em{font-style:italic;}
+h3{font-family:"Libre Baskerville",serif;font-size:1.15rem;font-weight:700;color:var(--navy);line-height:1.3;}
+.sec-label{font-size:0.62rem;font-weight:700;letter-spacing:0.22em;text-transform:upper<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mission & Vision | American Allied University</title>
+<meta name="description" content="Learn about the mission, vision, and core values of American Allied University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--navy:#0d2240;--navy-dark:#081628;--navy-mid:#163055;--gold:#b5892a;--gold-light:#d4a84b;--gold-pale:#f8f1e4;--white:#ffffff;--off:#f5f3ef;--text:#1a1a28;--muted:#6b6b80;--border:#ddd8ce;}
+html{scroll-behavior:smooth;scroll-padding-top:76px;}
+body{font-family:"Source Sans 3",sans-serif;background:var(--white);color:var(--text);overflow-x:hidden;}
+.container{max-width:1200px;margin:0 auto;padding:0 2rem;}
+h1{font-family:"Libre Baskerville",serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:700;line-height:1.1;color:var(--navy);letter-spacing:-0.01em;}
+h2{font-family:"Libre Baskerville",serif;font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:700;line-height:1.2;color:var(--navy);margin-bottom:0.85rem;letter-spacing:-0.01em;}
+h2 em{font-style:italic;}
+h3{font-family:"Libre Baskerville",serif;font-size:1.15rem;font-weight:700;color:var(--navy);line-height:1.3;}
+.sec-label{font-size:0.62rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;display:block;}
+.sec-intro{font-size:0.95rem;font-weight:300;color:var(--muted);line-height:1.8;max-width:580px;margin-bottom:2.5rem;}
+section{padding:5rem 0;}
+/* NAV */
+nav{background:var(--navy);height:72px;display:flex;align-items:center;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,0.2);}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;width:100%;}
+.logo{display:flex;align-items:center;gap:0.85rem;text-decoration:none;}
+.logo-name{font-family:"Libre Baskerville",serif;font-size:0.95rem;font-weight:700;color:var(--white);line-height:1.2;}
+.logo-sub{font-size:0.55rem;font-weight:400;color:rgba(255,255,255,0.45);letter-spacing:0.12em;text-transform:uppercase;}
+.nav-links{display:none;list-style:none;gap:0.25rem;}
+.nav-item{position:relative;list-style:none;}
+.nav-item>a{font-size:0.78rem;font-weight:600;color:rgba(255,255,255,0.82);text-decoration:none;letter-spacing:0.03em;display:flex;align-items:center;gap:0.3rem;padding:0.4rem 0.6rem;border-radius:3px;transition:all 0.2s;white-space:nowrap;}
+.nav-item>a:hover,.nav-item:hover>a{color:var(--gold-light);background:rgba(255,255,255,0.06);}
+.nav-item>a .caret{font-size:0.5rem;opacity:0.6;transition:transform 0.2s;}
+.nav-item:hover>a .caret{transform:rotate(180deg);}
+.dropdown{position:absolute;top:calc(100% + 8px);left:0;background:var(--white);border-top:3px solid var(--gold);box-shadow:0 12px 40px rgba(13,34,64,0.15);min-width:560px;opacity:0;visibility:hidden;transform:translateY(8px);transition:all 0.22s ease;z-index:300;}
+.dropdown.wide{min-width:660px;}
+.nav-item:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+.dropdown-cols{display:grid;grid-template-columns:1fr 1fr;}
+.dropdown-col{padding:1.5rem;border-right:1px solid var(--border);}
+.dropdown-col:last-child{border-right:none;}
+.dropdown-col-label{font-size:0.58rem;font-weight:700;color:var(--gold);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:0.85rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);}
+.dropdown-link{display:block;text-decoration:none;padding:0.45rem 0;border-bottom:1px solid rgba(0,0,0,0.04);transition:all 0.15s;}
+.dropdown-link:last-child{border-bottom:none;}
+.dropdown-link:hover{padding-left:4px;}
+.dropdown-link:hover .dl-title{color:var(--gold);}
+.dl-title{font-size:0.82rem;font-weight:600;color:var(--navy);line-height:1.3;transition:color 0.15s;}
+.dl-desc{font-size:0.7rem;color:var(--muted);line-height:1.4;margin-top:0.1rem;}
+.dropdown-cta{background:var(--gold-pale);border-top:1px solid var(--border);padding:0.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.dropdown-cta p{font-size:0.76rem;font-weight:600;color:var(--navy);}
+.dropdown-cta a{font-size:0.7rem;font-weight:700;color:var(--white);background:var(--navy);padding:0.38rem 0.9rem;border-radius:3px;text-decoration:none;transition:background 0.2s;white-space:nowrap;}
+.dropdown-cta a:hover{background:var(--gold);}
+.nav-right{display:flex;align-items:center;gap:0.75rem;}
+.nav-apply{padding:0.52rem 1.25rem;background:var(--gold);color:var(--white);font-size:0.76rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background 0.2s;white-space:nowrap;}
+.nav-apply:hover{background:var(--gold-light);}
+.nav-menu-btn{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
+.nav-menu-btn span{display:block;width:22px;height:2px;background:rgba(255,255,255,0.8);transition:all 0.3s;}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:var(--navy);z-index:199;flex-direction:column;padding:1.5rem 2rem;overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{display:block;font-size:1.05rem;font-weight:500;color:rgba(255,255,255,0.85);text-decoration:none;padding:1rem 0;border-bottom:1px solid rgba(255,255,255,0.08);transition:color 0.2s;}
+.mobile-menu a:hover{color:var(--gold-light);}
+.mob-apply{margin-top:1.5rem;display:block;padding:1rem;background:var(--gold);color:var(--white);text-align:center;font-weight:700;font-size:0.88rem;letter-spacing:0.08em;text-transform:uppercase;border-radius:3px;}
+/* PAGE HERO */
+.page-hero{background:var(--navy);padding:4rem 0 3.5rem;position:relative;overflow:hidden;}
+.page-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(13,34,64,0.92),rgba(13,34,64,0.92)),url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80") center/cover no-repeat;}
+.page-hero-inner{position:relative;z-index:1;}
+.page-hero .sec-label{color:var(--gold-light);}
+.page-hero h1{color:var(--white);margin-bottom:1rem;}
+.page-hero h1 em{color:var(--gold-light);}
+.page-hero p{font-size:1rem;font-weight:300;color:rgba(255,255,255,0.72);line-height:1.8;max-width:580px;}
+/* BREADCRUMB */
+.breadcrumb{background:var(--gold-pale);border-bottom:1px solid var(--border);padding:0.6rem 0;}
+.breadcrumb-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;gap:0.5rem;font-size:0.72rem;color:var(--muted);}
+.breadcrumb a{color:var(--navy);text-decoration:none;font-weight:500;}
+.breadcrumb a:hover{color:var(--gold);}
+.breadcrumb span{color:var(--muted);}
+/* BUTTONS */
+.btn-navy{display:inline-flex;align-items:center;gap:0.4rem;padding:0.85rem 2rem;background:var(--navy);color:var(--white);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;border:2px solid var(--navy);transition:all 0.2s;}
+.btn-navy:hover{background:var(--navy-mid);}
+.btn-gold{display:inline-flex;align-items:center;gap:0.4rem;padding:0.85rem 2rem;background:var(--gold);color:var(--white);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;border:2px solid var(--gold);transition:all 0.2s;}
+.btn-gold:hover{background:var(--gold-light);border-color:var(--gold-light);}
+.btn-outline{display:inline-flex;align-items:center;gap:0.4rem;padding:0.85rem 2rem;background:transparent;color:var(--navy);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;border:2px solid var(--navy);transition:all 0.2s;}
+.btn-outline:hover{background:var(--navy);color:var(--white);}
+/* CARDS */
+.card{background:var(--white);border:1px solid var(--border);border-top:4px solid var(--navy);padding:2rem;border-radius:2px;transition:all 0.3s;}
+.card:hover{box-shadow:0 8px 28px rgba(13,34,64,0.1);transform:translateY(-3px);border-top-color:var(--gold);}
+.card-gold{border-top-color:var(--gold);}
+/* FOOTER */
+footer{background:#060f1c;padding:4rem 0 0;}
+.footer-grid{max-width:1200px;margin:0 auto;padding:0 2rem 3rem;display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:3rem;border-bottom:1px solid rgba(255,255,255,0.08);}
+.footer-brand-name{font-family:"Libre Baskerville",serif;font-size:0.95rem;font-weight:700;color:var(--white);margin-bottom:0.25rem;}
+.footer-brand-sub{font-size:0.58rem;color:rgba(255,255,255,0.28);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.85rem;}
+.footer-brand-desc{font-size:0.76rem;color:rgba(255,255,255,0.4);line-height:1.75;max-width:280px;}
+.footer-col h5{font-size:0.6rem;font-weight:700;color:var(--gold-light);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1rem;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.5rem;}
+.footer-col a{font-size:0.76rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;line-height:1.4;}
+.footer-col a:hover{color:var(--gold-light);}
+.footer-legal{max-width:1200px;margin:0 auto;padding:1.5rem 2rem;border-bottom:1px solid rgba(255,255,255,0.06);}
+.footer-legal p{font-size:0.68rem;color:rgba(255,255,255,0.28);line-height:1.65;}
+.footer-legal a{color:rgba(255,255,255,0.4);text-decoration:underline;}
+.footer-bottom{max-width:1200px;margin:0 auto;padding:1.25rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.footer-copy{font-size:0.65rem;color:rgba(255,255,255,0.25);}
+.footer-links-row{display:flex;gap:1.5rem;flex-wrap:wrap;}
+.footer-links-row a{font-size:0.65rem;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s;}
+.footer-links-row a:hover{color:var(--gold-light);}
+/* RESPONSIVE */
+@media(min-width:768px){.nav-links{display:flex;}.nav-menu-btn{display:none;}}
+@media(max-width:960px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.nav-inner{padding:0 1.25rem;}.container{padding:0 1.25rem;}section{padding:3.5rem 0;}.footer-grid{grid-template-columns:1fr;gap:2rem;padding-bottom:2rem;}.footer-bottom{flex-direction:column;text-align:center;}.footer-links-row{justify-content:center;}}
+</style>
+
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <svg width="48" height="48" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+        <path d="M290 420 Q260 380 240 340 Q225 305 218 270 Q214 245 215 220" stroke="#b5892a" stroke-width="2" fill="none"/>
+        <ellipse cx="268" cy="388" rx="14" ry="7" fill="#b5892a" transform="rotate(-40 268 388)"/>
+        <ellipse cx="252" cy="362" rx="13" ry="6" fill="#b5892a" transform="rotate(-50 252 362)"/>
+        <ellipse cx="240" cy="335" rx="13" ry="6" fill="#b5892a" transform="rotate(-55 240 335)"/>
+        <ellipse cx="230" cy="308" rx="12" ry="6" fill="#b5892a" transform="rotate(-60 230 308)"/>
+        <ellipse cx="278" cy="375" rx="12" ry="6" fill="#c9a84c" transform="rotate(-20 278 375)"/>
+        <ellipse cx="262" cy="350" rx="11" ry="5" fill="#c9a84c" transform="rotate(-25 262 350)"/>
+        <path d="M390 420 Q420 380 440 340 Q455 305 462 270 Q466 245 465 220" stroke="#b5892a" stroke-width="2" fill="none"/>
+        <ellipse cx="412" cy="388" rx="14" ry="7" fill="#b5892a" transform="rotate(40 412 388)"/>
+        <ellipse cx="428" cy="362" rx="13" ry="6" fill="#b5892a" transform="rotate(50 428 362)"/>
+        <ellipse cx="440" cy="335" rx="13" ry="6" fill="#b5892a" transform="rotate(55 440 335)"/>
+        <ellipse cx="450" cy="308" rx="12" ry="6" fill="#b5892a" transform="rotate(60 450 308)"/>
+        <ellipse cx="402" cy="375" rx="12" ry="6" fill="#c9a84c" transform="rotate(20 402 375)"/>
+        <ellipse cx="418" cy="350" rx="11" ry="5" fill="#c9a84c" transform="rotate(25 418 350)"/>
+        <rect x="328" y="420" width="24" height="12" rx="2" fill="#b5892a"/>
+        <path d="M340 68 L450 68 L450 208 Q450 300 340 358 Q230 300 230 208 L230 68 Z" fill="#b5892a"/>
+        <path d="M340 75 L443 75 L443 207 Q443 294 340 349 Q237 294 237 207 L237 75 Z" fill="#0d2240"/>
+        <line x1="237" y1="168" x2="443" y2="168" stroke="#b5892a" stroke-width="3"/>
+        <g transform="translate(340,258)"><line x1="0" y1="-32" x2="0" y2="32" stroke="#b5892a" stroke-width="2.5"/><path d="M0 -28 Q-36 -32 -52 -20 L-52 28 Q-36 18 0 22 Z" fill="none" stroke="#b5892a" stroke-width="2"/><path d="M0 -28 Q36 -32 52 -20 L52 28 Q36 18 0 22 Z" fill="none" stroke="#b5892a" stroke-width="2"/></g>
+        <g transform="translate(340,120)"><circle cx="0" cy="0" r="34" fill="none" stroke="#b5892a" stroke-width="2"/><ellipse cx="0" cy="0" rx="17" ry="34" fill="none" stroke="#b5892a" stroke-width="1.5"/><line x1="-34" y1="0" x2="34" y2="0" stroke="#b5892a" stroke-width="1.5"/><line x1="-30" y1="-17" x2="30" y2="-17" stroke="#b5892a" stroke-width="1.2"/><line x1="-30" y1="17" x2="30" y2="17" stroke="#b5892a" stroke-width="1.2"/><line x1="0" y1="-34" x2="0" y2="34" stroke="#b5892a" stroke-width="1.5"/></g>
+      </svg>
+      <div>
+        <div class="logo-name">American Allied University</div>
+        <div class="logo-sub">Online &middot; Global &middot; Career-Focused</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="programs.html">Academic Programs <span class="caret">&#9660;</span></a>
+        <div class="dropdown wide">
+          <div class="dropdown-cols">
+            <div class="dropdown-col"><div class="dropdown-col-label">Certificates &amp; Certifications</div>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Business &amp; Operations</div><div class="dl-desc">Project management, leadership, digital marketing</div></a>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Technology &amp; AI</div><div class="dl-desc">AI, data analytics, cybersecurity, Google Career Certificates</div></a>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Education &amp; Leadership</div><div class="dl-desc">Instructional skills, organizational management</div></a>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Healthcare &amp; Allied Health</div><div class="dl-desc">Health administration, patient care pathways</div></a>
+            </div>
+            <div class="dropdown-col"><div class="dropdown-col-label">Graduate Degrees (Planned)</div>
+              <a href="programs.html#grad" class="dropdown-link"><div class="dl-title">Master of Education (M.Ed.)</div><div class="dl-desc">Teaching, curriculum, educational leadership</div></a>
+              <a href="programs.html#grad" class="dropdown-link"><div class="dl-title">Master of Business Administration (MBA)</div><div class="dl-desc">Strategy, finance, operations, entrepreneurship</div></a>
+              <a href="programs.html#grad" class="dropdown-link"><div class="dl-title">Master of Organizational Leadership (MOL)</div><div class="dl-desc">Leadership development, change management</div></a>
+            </div>
+          </div>
+          <div class="dropdown-cta"><p>Not sure which program is right for you?</p><a href="admissions.html">Request Advising</a></div>
+        </div>
+      </li>
+      <li class="nav-item"><a href="about.html">About AAU <span class="caret">&#9660;</span></a>
+        <div class="dropdown">
+          <div class="dropdown-cols">
+            <div class="dropdown-col"><div class="dropdown-col-label">The Institution</div>
+              <a href="about.html" class="dropdown-link"><div class="dl-title">About American Allied University</div><div class="dl-desc">Who we are and what we stand for</div></a>
+              <a href="mission.html" class="dropdown-link"><div class="dl-title">Mission &amp; Vision</div><div class="dl-desc">Our purpose, values, and direction</div></a>
+            </div>
+            <div class="dropdown-col"><div class="dropdown-col-label">Connect</div>
+              <a href="contact.html" class="dropdown-link"><div class="dl-title">Contact Us</div><div class="dl-desc"><span class="__cf_email__" data-cfemail="91f8fff7fed1f0fcf4e3f8f2f0fff0fdfdf8f4f5bfe4e2">[email&#160;protected]</span></div></a>
+              <a href="admissions.html" class="dropdown-link"><div class="dl-title">Admissions</div><div class="dl-desc">Apply or request information</div></a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item"><a href="mission.html">Mission &amp; Vision</a></li>
+      <li class="nav-item"><a href="admissions.html">Become a Student</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="admissions.html" class="nav-apply">Apply Now</a>
+      <button class="nav-menu-btn" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="programs.html" onclick="toggleMenu()">Academic Programs</a>
+  <a href="about.html" onclick="toggleMenu()">About AAU</a>
+  <a href="mission.html" onclick="toggleMenu()">Mission &amp; Vision</a>
+  <a href="admissions.html" onclick="toggleMenu()">Become a Student</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact Us</a>
+  <a href="admissions.html" class="mob-apply" onclick="toggleMenu()">Apply Now</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner container">
+    <span class="sec-label">Mission &amp; Vision</span>
+    <h1>What We <em>Stand For</em></h1>
+    <p>The principles that guide every program we build, every student we serve, and every decision we make as an institution.</p>
+  </div>
+</div>
+<div class="breadcrumb"><div class="breadcrumb-inner"><a href="index.html">Home</a><span>/</span><span>Mission &amp; Vision</span></div></div>
+
+<section style="background:var(--off);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:4rem;">
+      <div class="card card-gold">
+        <span class="sec-label">Our Mission</span>
+        <h2 style="margin-bottom:1.25rem;">To make quality education accessible to every learner, everywhere.</h2>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.85;margin-bottom:1rem;">American Allied University exists to remove the barriers that prevent hardworking people from advancing their careers and lives. We believe that where you live, what you earn, or what your schedule looks like should never determine the quality of education you receive.</p>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.85;">We serve working professionals, career changers, immigrants, parents, and global learners who need flexible, affordable, and career-focused education.</p>
+      </div>
+      <div class="card" style="border-top-color:var(--gold-light);">
+        <span class="sec-label">Our Vision</span>
+        <h2 style="margin-bottom:1.25rem;">To become the leading online university for global learners.</h2>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.85;margin-bottom:1rem;">We envision a future where American Allied University is recognized worldwide as the institution that opened doors for millions of learners who were overlooked by traditional higher education.</p>
+        <p style="font-size:0.9rem;color:var(--muted);line-height:1.85;">Our vision is a university without borders — where a student in Nairobi, Lagos, Manila, or anywhere else in the world has the same access to transformational education.</p>
+      </div>
+    </div>
+
+    <span class="sec-label">Core Values</span>
+    <h2 style="margin-bottom:2.5rem;">The Principles We Live By</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+      <div class="card"><div style="font-size:0.68rem;font-weight:700;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.6rem;">Access</div><p style="font-size:0.84rem;color:var(--muted);line-height:1.7;">Education is a right, not a privilege. We design every program to be affordable, flexible, and available to anyone with the drive to learn.</p></div>
+      <div class="card"><div style="font-size:0.68rem;font-weight:700;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.6rem;">Excellence</div><p style="font-size:0.84rem;color:var(--muted);line-height:1.7;">We hold our programs to the highest standards of quality, relevance, and rigor — because our students deserve nothing less than the best.</p></div>
+      <div class="card"><div style="font-size:0.68rem;font-weight:700;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.6rem;">Integrity</div><p style="font-size:0.84rem;color:var(--muted);line-height:1.7;">We are transparent about who we are, what we offer, and where we are in our journey. We never overstate our credentials or mislead our students.</p></div>
+      <div class="card"><div style="font-size:0.68rem;font-weight:700;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.6rem;">Community</div><p style="font-size:0.84rem;color:var(--muted);line-height:1.7;">We serve the whole learner. We are especially committed to working professionals, immigrant communities, and underserved global learners.</p></div>
+      <div class="card"><div style="font-size:0.68rem;font-weight:700;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.6rem;">Innovation</div><p style="font-size:0.84rem;color:var(--muted);line-height:1.7;">We embrace technology and global partnerships to continuously improve how we deliver education to our students worldwide.</p></div>
+      <div class="card"><div style="font-size:0.68rem;font-weight:700;color:var(--gold);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.6rem;">Impact</div><p style="font-size:0.84rem;color:var(--muted);line-height:1.7;">We measure success by the careers advanced, families lifted, and communities strengthened by our graduates.</p></div>
+    </div>
+
+    <div style="max-width:700px;margin:4rem auto 0;text-align:center;padding:2.5rem;background:var(--navy);border-top:4px solid var(--gold);">
+      <p style="font-family:'Libre Baskerville',serif;font-size:1.15rem;font-style:italic;color:var(--gold-light);line-height:1.75;">"We built American Allied University because the world needs an institution that says yes to the student that everyone else said no to."</p>
+      <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:0.75rem;letter-spacing:0.1em;text-transform:uppercase;">Founder, American Allied University</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-name">American Allied University</div>
+      <div class="footer-brand-sub">Online &middot; Global</div>
+      <p class="footer-brand-desc">An online professional certificate provider delivering structured programs through a dedicated Coursera Classroom for Organizations.</p>
+      <p class="footer-brand-desc" style="margin-top:0.5rem;"><a href="/cdn-cgi/l/email-protection#e58c8b838aa5848880978c86848b8489898c8081cb9096" style="color:rgba(255,255,255,0.5);text-decoration:none;"><span class="__cf_email__" data-cfemail="741d1a121b34151911061d17151a1518181d11105a0107">[email&#160;protected]</span></a> &middot; <a href="https://americanallied.us" style="color:rgba(255,255,255,0.5);text-decoration:none;">americanallied.us</a></p>
+    </div>
+    <div class="footer-col"><h5>Programs</h5><ul>
+      <li><a href="programs.html#certs">Business Administration</a></li>
+      <li><a href="programs.html#certs">Technology &amp; AI</a></li>
+      <li><a href="programs.html#certs">Education &amp; Leadership</a></li>
+      <li><a href="programs.html#certs">Allied Health Administration</a></li>
+      <li><a href="programs.html#grad">Graduate Degrees (Planned)</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Institution</h5><ul>
+      <li><a href="about.html">About AAU</a></li>
+      <li><a href="mission.html">Mission &amp; Vision</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Legal</h5><ul>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
+      <li><a href="programs.html">Program Catalog</a></li>
+      <li><a href="/cdn-cgi/l/email-protection#ec85828a83ac8d81899e858f8d828d8080858988c2999f">Email Us</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal">
+    <p>American Allied University is an online professional certificate and development program provider incorporated in the United States. Current offerings are certificate programs delivered through AAU's dedicated Coursera Classroom for Organizations. Graduate degree programs are planned for a future launch date. Certificate programs are not degree programs and credits may not transfer. Contact <a href="/cdn-cgi/l/email-protection#563f38303916373b33243f353738373a3a3f3332782325"><span class="__cf_email__" data-cfemail="c8a1a6aea788a9a5adbaa1aba9a6a9a4a4a1adace6bdbb">[email&#160;protected]</span></a> for full details.</p>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 American Allied University. All rights reserved. Online · Global.</span>
+    <div class="footer-links-row">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="concase;color:var(--gold);margin-bottom:0.5rem;display:block;}
+.sec-intro{font-size:0.95rem;font-weight:300;color:var(--muted);line-height:1.8;max-width:580px;margin-bottom:2.5rem;}
+section{padding:5rem 0;}
+/* NAV */<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>American Allied University | Global Online Education</title>
 <meta name="description" content="American Allied University is a global online institution offering professional certificate programs and planned graduate degrees for working professionals and learners worldwide.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +588,7 @@ section{padding:5rem 0;}
 /* ── WHITE NAV ── */
 nav{
   background:var(--white);
-  height:78px;display:flex;align-items:center;
+  height:88px;display:flex;align-items:center;
   position:fixed;top:0;left:0;right:0;z-index:200;
   border-bottom:1px solid var(--border);
   box-shadow:0 2px 16px rgba(0,0,0,0.06);
@@ -64,7 +625,7 @@ nav{
 .nav-apply:hover{background:var(--gold);}
 .nav-menu-btn{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
 .nav-menu-btn span{display:block;width:22px;height:2px;background:var(--navy);transition:all 0.3s;}
-.mobile-menu{display:none;position:fixed;top:78px;left:0;right:0;bottom:0;background:var(--white);z-index:199;flex-direction:column;padding:1.5rem 2rem;overflow-y:auto;border-top:1px solid var(--border);}
+.mobile-menu{display:none;position:fixed;top:88px;left:0;right:0;bottom:0;background:var(--white);z-index:199;flex-direction:column;padding:1.5rem 2rem;overflow-y:auto;border-top:1px solid var(--border);}
 .mobile-menu.open{display:flex;}
 .mobile-menu a{display:block;font-size:1rem;font-weight:500;color:var(--text);text-decoration:none;padding:1rem 0;border-bottom:1px solid var(--border);transition:color 0.2s;}
 .mobile-menu a:hover{color:var(--gold);}
@@ -74,7 +635,7 @@ nav{
 #hero{
   position:relative;width:100%;height:100vh;min-height:600px;
   display:flex;align-items:center;justify-content:flex-start;
-  overflow:hidden;margin-top:0;padding-top:78px;
+  overflow:hidden;margin-top:0;padding-top:88px;
 }
 .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to right, rgba(8,18,35,0.88) 50%, rgba(8,18,35,0.45) 100%);z-index:1;}
@@ -177,7 +738,7 @@ footer{background:#060f1c;padding:4rem 0 0;}
 <nav>
   <div class="nav-inner">
     <a href="index.html" class="logo">
-      <svg width="42" height="42" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+      <svg width="62" height="62" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
         <path d="M290 420 Q260 380 240 340 Q225 305 218 270 Q214 245 215 220" stroke="#b5892a" stroke-width="2" fill="none"/>
         <ellipse cx="268" cy="388" rx="14" ry="7" fill="#b5892a" transform="rotate(-40 268 388)"/>
         <ellipse cx="252" cy="362" rx="13" ry="6" fill="#b5892a" transform="rotate(-50 252 362)"/>
@@ -232,7 +793,7 @@ footer{background:#060f1c;padding:4rem 0 0;}
               <a href="mission.html" class="dropdown-link"><div class="dl-title">Mission &amp; Vision</div><div class="dl-desc">Our purpose, values, and direction</div></a>
             </div>
             <div class="dropdown-col"><div class="dropdown-col-label">Connect</div>
-              <a href="contact.html" class="dropdown-link"><div class="dl-title">Contact Us</div><div class="dl-desc">info@americanallied.us</div></a>
+              <a href="contact.html" class="dropdown-link"><div class="dl-title">Contact Us</div><div class="dl-desc"><span class="__cf_email__" data-cfemail="1d74737b725d7c70786f747e7c737c717174787933686e">[email&#160;protected]</span></div></a>
               <a href="admissions.html" class="dropdown-link"><div class="dl-title">Admissions</div><div class="dl-desc">Apply or request information</div></a>
             </div>
           </div>
@@ -270,7 +831,7 @@ footer{background:#060f1c;padding:4rem 0 0;}
   <div class="hero-content">
     <div class="hero-tag"><span></span>American Allied University<span></span></div>
     <h1>Educating Leaders<br>for a <em>Connected</em> World</h1>
-    <p class="hero-desc">Global online certificate programs for working professionals and learners worldwide — built around flexibility, career outcomes, and academic integrity.</p>
+    <p class="hero-desc">A global institution delivering high-quality higher education through technology — accessible to working professionals and learners everywhere in the world.</p>
     <div class="hero-ctas">
       <a href="admissions.html" class="btn-gold">Apply for Admission</a>
       <a href="programs.html" class="btn-outline-white">Explore Programs</a>
@@ -287,7 +848,7 @@ footer{background:#060f1c;padding:4rem 0 0;}
 <!-- ANNOUNCEMENT STRIP -->
 <div class="strip">
   <div class="strip-inner">
-    <p>Spring 2026 enrollment is open. Certificate programs available now. Graduate degrees planned.</p>
+    <p>Spring 2026 enrollment is open. Programs available now. Graduate degrees in development.</p>
     <a href="admissions.html">Apply Free &rarr;</a>
   </div>
 </div>
@@ -318,7 +879,7 @@ footer{background:#060f1c;padding:4rem 0 0;}
       <div class="why-card">
         <div class="why-num">04</div>
         <h3>Career-Focused</h3>
-        <p>Programs built around the skills employers need in today's fast-changing global workforce.</p>
+        <p>Curriculum aligned to industry needs, delivered with the rigor and quality of the world's best institutions.</p>
       </div>
       <div class="why-card">
         <div class="why-num">05</div>
@@ -421,9 +982,9 @@ footer{background:#060f1c;padding:4rem 0 0;}
   <div class="footer-grid">
     <div>
       <div class="footer-brand-name">American Allied University</div>
-      <div class="footer-brand-sub">Est. 2024 &middot; Online &middot; Global</div>
-      <p class="footer-brand-desc">A global online professional certificate provider delivering structured programs through a dedicated Coursera Classroom for Organizations, serving working professionals and learners worldwide.</p>
-      <p class="footer-brand-desc" style="margin-top:0.5rem;"><a href="mailto:info@americanallied.us" style="color:rgba(255,255,255,0.5);text-decoration:none;">info@americanallied.us</a> &middot; <a href="https://americanallied.us" style="color:rgba(255,255,255,0.5);text-decoration:none;">americanallied.us</a></p>
+      <div class="footer-brand-sub">Online &middot; Global</div>
+      <p class="footer-brand-desc">A global institution delivering high-quality higher education through technology — accessible to working professionals and learners everywhere in the world.</p>
+      <p class="footer-brand-desc" style="margin-top:0.5rem;"><a href="/cdn-cgi/l/email-protection#442d2a222b04252921362d27252a2528282d21206a3137" style="color:rgba(255,255,255,0.5);text-decoration:none;"><span class="__cf_email__" data-cfemail="70191e161f30111d15021913111e111c1c1915145e0503">[email&#160;protected]</span></a> &middot; <a href="https://americanallied.us" style="color:rgba(255,255,255,0.5);text-decoration:none;">americanallied.us</a></p>
     </div>
     <div class="footer-col"><h5>Programs</h5><ul>
       <li><a href="programs.html#certs">Business Administration</a></li>
@@ -442,25 +1003,562 @@ footer{background:#060f1c;padding:4rem 0 0;}
       <li><a href="privacy.html">Privacy Policy</a></li>
       <li><a href="terms.html">Terms of Use</a></li>
       <li><a href="programs.html">Program Catalog</a></li>
-      <li><a href="mailto:info@americanallied.us">Email Us</a></li>
+      <li><a href="/cdn-cgi/l/email-protection#d7beb9b1b897b6bab2a5beb4b6b9b6bbbbbeb2b3f9a2a4">Email Us</a></li>
     </ul></div>
   </div>
   <div class="footer-legal">
-    <p>American Allied University is a global online professional certificate and development program provider. Current offerings are certificate programs delivered through AAU's dedicated Coursera Classroom for Organizations. Graduate degree programs are planned for a future launch date. Certificate programs are not degree programs and credits may not transfer. Contact <a href="mailto:info@americanallied.us">info@americanallied.us</a> for full details.</p>
+    <p>American Allied University is a global institution committed to delivering high-quality higher education through technology, accessible to learners worldwide. Current offerings are certificate programs delivered through AAU's dedicated Coursera Classroom for Organizations. Graduate degree programs are planned for a future launch date. Certificate programs are not degree programs and credits may not transfer. Contact <a href="/cdn-cgi/l/email-protection#2940474f466948444c5b404a4847484545404c4d075c5a"><span class="__cf_email__" data-cfemail="771e19111837161a12051e141619161b1b1e1213590204">[email&#160;protected]</span></a> for full details.</p>
   </div>
   <div class="footer-bottom">
     <span class="footer-copy">&copy; 2026 American Allied University. All rights reserved. Online &middot; Global.</span>
     <div class="footer-links-row">
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
-      <a href="contact.html">Contact</a>
+      <a href="conta
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admissions — Apply Now | American Allied University</title>
+<meta name="description" content="Apply to American Allied University. Free application, open to learners worldwide. Certificate programs available now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--navy:#0d2240;--navy-dark:#081628;--navy-mid:#163055;--gold:#b5892a;--gold-light:#d4a84b;--gold-pale:#f8f1e4;--white:#ffffff;--off:#f5f3ef;--text:#1a1a28;--muted:#6b6b80;--border:#ddd8ce;}
+html{scroll-behavior:smooth;scroll-padding-top:76px;}
+body{font-family:"Source Sans 3",sans-serif;background:var(--white);color:var(--text);overflow-x:hidden;}
+.container{max-width:1200px;margin:0 auto;padding:0 2rem;}
+h1{font-family:"Libre Baskerville",serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:700;line-height:1.1;color:var(--navy);letter-spacing:-0.01em;}
+h2{font-family:"Libre Baskerville",serif;font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:700;line-height:1.2;color:var(--navy);margin-bottom:0.85rem;letter-spacing:-0.01em;}
+h2 em{font-style:italic;}
+h3{font-family:"Libre Baskerville",serif;font-size:1.15rem;font-weight:700;color:var(--navy);line-height:1.3;}
+.sec-label{font-size:0.62rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;display:block;}
+.sec-intro{font-size:0.95rem;font-weight:300;color:var(--muted);line-height:1.8;max-width:580px;margin-bottom:2.5rem;}
+section{padding:5rem 0;}
+/* NAV */
+nav{background:var(--navy);height:72px;display:flex;align-items:center;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,0.2);}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;width:100%;}
+.logo{display:flex;align-items:center;gap:0.85rem;text-decoration:none;}
+.logo-name{font-family:"Libre Baskerville",serif;font-size:0.95rem;font-weight:700;color:var(--white);line-height:1.2;}
+.logo-sub{font-size:0.55rem;font-weight:400;color:rgba(255,255,255,0.45);letter-spacing:0.12em;text-transform:uppercase;}
+.nav-links{display:none;list-style:none;gap:0.25rem;}
+.nav-item{position:relative;list-style:none;}
+.nav-item>a{font-size:0.78rem;font-weight:600;color:rgba(255,255,255,0.82);text-decoration:none;letter-spacing:0.03em;display:flex;align-items:center;gap:0.3rem;padding:0.4rem 0.6rem;border-radius:3px;transition:all 0.2s;white-space:nowrap;}
+.nav-item>a:hover,.nav-item:hover>a{color:var(--gold-light);background:rgba(255,255,255,0.06);}
+.nav-item>a .caret{font-size:0.5rem;opacity:0.6;transition:transform 0.2s;}
+.nav-item:hover>a .caret{transform:rotate(180deg);}
+.dropdown{position:absolute;top:calc(100% + 8px);left:0;background:var(--white);border-top:3px solid var(--gold);box-shadow:0 12px 40px rgba(13,34,64,0.15);min-width:560px;opacity:0;visibility:hidden;transform:translateY(8px);transition:all 0.22s ease;z-index:300;}
+.dropdown.wide{min-width:660px;}
+.nav-item:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+.dropdown-cols{display:grid;grid-template-columns:1fr 1fr;}
+.dropdown-col{padding:1.5rem;border-right:1px solid var(--border);}
+.dropdown-col:last-child{border-right:none;}
+.dropdown-col-label{font-size:0.58rem;font-weight:700;color:var(--gold);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:0.85rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);}
+.dropdown-link{display:block;text-decoration:none;padding:0.45rem 0;border-bottom:1px solid rgba(0,0,0,0.04);transition:all 0.15s;}
+.dropdown-link:last-child{border-bottom:none;}
+.dropdown-link:hover{padding-left:4px;}
+.dropdown-link:hover .dl-title{color:var(--gold);}
+.dl-title{font-size:0.82rem;font-weight:600;color:var(--navy);line-height:1.3;transition:color 0.15s;}
+.dl-desc{font-size:0.7rem;color:var(--muted);line-height:1.4;margin-top:0.1rem;}
+.dropdown-cta{background:var(--gold-pale);border-top:1px solid var(--border);padding:0.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.dropdown-cta p{font-size:0.76rem;font-weight:600;color:var(--navy);}
+.dropdown-cta a{font-size:0.7rem;font-weight:700;color:var(--white);background:var(--navy);padding:0.38rem 0.9rem;border-radius:3px;text-decoration:none;transition:background 0.2s;white-space:nowrap;}
+.dropdown-cta a:hover{background:var(--gold);}
+.nav-right{display:flex;align-items:center;gap:0.75rem;}
+.nav-apply{padding:0.52rem 1.25rem;background:var(--gold);color:var(--white);font-size:0.76rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background 0.2s;white-space:nowrap;}
+.nav-apply:hover{background:var(--gold-light);}
+.nav-menu-btn{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
+.nav-menu-btn span{display:block;width:22px;height:2px;background:rgba(255,255,255,0.8);transition:all 0.3s;}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:var(--navy);z-index:199;flex-direction:column;padding:1.5rem 2rem;overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{display:block;font-size:1.05rem;font-weight:500;color:rgba(255,255,255,0.85);text-decoration:none;padding:1rem 0;border-bottom:1px solid rgba(255,255,255,0.08);transition:color 0.2s;}
+.mobile-menu a:hover{color:var(--gold-light);}
+.mob-apply{margin-top:1.5rem;display:block;padding:1rem;background:var(--gold);color:var(--white);text-align:center;font-weight:700;font-size:0.88rem;letter-spacing:0.08em;text-transform:uppercase;border-radius:3px;}
+/* PAGE HERO */
+.page-hero{background:var(--navy);padding:4rem 0 3.5rem;position:relative;overflow:hidden;}
+.page-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(13,34,64,0.92),rgba(13,34,64,0.92)),url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80") center/cover no-repeat;}
+.page-hero-inner{position:relative;z-index:1;}
+.page-hero .sec-label{color:var(--gold-light);}
+.page-hero h1{color:var(--white);margin-bottom:1rem;}
+.page-hero h1 em{color:var(--gold-light);}
+.page-hero p{font-size:1rem;font-weight:300;color:rgba(255,255,255,0.72);line-height:1.8;max-width:580px;}
+/* BREADCRUMB */
+.breadcrumb{background:var(--gold-pale);border-bottom:1px solid var(--border);padding:0.6rem 0;}
+.breadcrumb-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;gap:0.5rem;font-size:0.72rem;color:var(--muted);}
+.breadcrumb a{color:var(--navy);text-decoration:none;font-weight:500;}
+.breadcrumb a:hover{color:var(--gold);}
+.breadcrumb span{color:var(--muted);}
+/* BUTTONS */
+.btn-navy{display:inline-flex;align-items:center;gap:0.4rem;padding:0.85rem 2rem;background:var(--navy);color:var(--white);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;border:2px solid var(--navy);transition:all 0.2s;}
+.btn-navy:hover{background:var(--navy-mid);}
+.btn-gold{display:inline-flex;align-items:center;gap:0.4rem;padding:0.85rem 2rem;background:var(--gold);color:var(--white);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;border:2px solid var(--gold);transition:all 0.2s;}
+.btn-gold:hover{background:var(--gold-light);border-color:var(--gold-light);}
+.btn-outline{display:inline-flex;align-items:center;gap:0.4rem;padding:0.85rem 2rem;background:transparent;color:var(--navy);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;border:2px solid var(--navy);transition:all 0.2s;}
+.btn-outline:hover{background:var(--navy);color:var(--white);}
+/* CARDS */
+.card{background:var(--white);border:1px solid var(--border);border-top:4px solid var(--navy);padding:2rem;border-radius:2px;transition:all 0.3s;}
+.card:hover{box-shadow:0 8px 28px rgba(13,34,64,0.1);transform:translateY(-3px);border-top-color:var(--gold);}
+.card-gold{border-top-color:var(--gold);}
+/* FOOTER */
+footer{background:#060f1c;padding:4rem 0 0;}
+.footer-grid{max-width:1200px;margin:0 auto;padding:0 2rem 3rem;display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:3rem;border-bottom:1px solid rgba(255,255,255,0.08);}
+.footer-brand-name{font-family:"Libre Baskerville",serif;font-size:0.95rem;font-weight:700;color:var(--white);margin-bottom:0.25rem;}
+.footer-brand-sub{font-size:0.58rem;color:rgba(255,255,255,0.28);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.85rem;}
+.footer-brand-desc{font-size:0.76rem;color:rgba(255,255,255,0.4);line-height:1.75;max-width:280px;}
+.footer-col h5{font-size:0.6rem;font-weight:700;color:var(--gold-light);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1rem;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.5rem;}
+.footer-col a{font-size:0.76rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;line-height:1.4;}
+.footer-col a:hover{color:var(--gold-light);}
+.footer-legal{max-width:1200px;margin:0 auto;padding:1.5rem 2rem;border-bottom:1px solid rgba(255,255,255,0.06);}
+.footer-legal p{font-size:0.68rem;color:rgba(255,255,255,0.28);line-height:1.65;}
+.footer-legal a{color:rgba(255,255,255,0.4);text-decoration:underline;}
+.footer-bottom{max-width:1200px;margin:0 auto;padding:1.25rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.footer-copy{font-size:0.65rem;color:rgba(255,255,255,0.25);}
+.footer-links-row{display:flex;gap:1.5rem;flex-wrap:wrap;}
+.footer-links-row a{font-size:0.65rem;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s;}
+.footer-links-row a:hover{color:var(--gold-light);}
+/* RESPONSIVE */
+@media(min-width:768px){.nav-links{display:flex;}.nav-menu-btn{display:none;}}
+@media(max-width:960px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.nav-inner{padding:0 1.25rem;}.container{padding:0 1.25rem;}section{padding:3.5rem 0;}.footer-grid{grid-template-columns:1fr;gap:2rem;padding-bottom:2rem;}.footer-bottom{flex-direction:column;text-align:center;}.footer-links-row{justify-content:center;}}
+</style>
+
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <svg width="48" height="48" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+        <path d="M290 420 Q260 380 240 340 Q225 305 218 270 Q214 245 215 220" stroke="#b5892a" stroke-width="2" fill="none"/>
+        <ellipse cx="268" cy="388" rx="14" ry="7" fill="#b5892a" transform="rotate(-40 268 388)"/>
+        <ellipse cx="252" cy="362" rx="13" ry="6" fill="#b5892a" transform="rotate(-50 252 362)"/>
+        <ellipse cx="240" cy="335" rx="13" ry="6" fill="#b5892a" transform="rotate(-55 240 335)"/>
+        <ellipse cx="230" cy="308" rx="12" ry="6" fill="#b5892a" transform="rotate(-60 230 308)"/>
+        <ellipse cx="278" cy="375" rx="12" ry="6" fill="#c9a84c" transform="rotate(-20 278 375)"/>
+        <ellipse cx="262" cy="350" rx="11" ry="5" fill="#c9a84c" transform="rotate(-25 262 350)"/>
+        <path d="M390 420 Q420 380 440 340 Q455 305 462 270 Q466 245 465 220" stroke="#b5892a" stroke-width="2" fill="none"/>
+        <ellipse cx="412" cy="388" rx="14" ry="7" fill="#b5892a" transform="rotate(40 412 388)"/>
+        <ellipse cx="428" cy="362" rx="13" ry="6" fill="#b5892a" transform="rotate(50 428 362)"/>
+        <ellipse cx="440" cy="335" rx="13" ry="6" fill="#b5892a" transform="rotate(55 440 335)"/>
+        <ellipse cx="450" cy="308" rx="12" ry="6" fill="#b5892a" transform="rotate(60 450 308)"/>
+        <ellipse cx="402" cy="375" rx="12" ry="6" fill="#c9a84c" transform="rotate(20 402 375)"/>
+        <ellipse cx="418" cy="350" rx="11" ry="5" fill="#c9a84c" transform="rotate(25 418 350)"/>
+        <rect x="328" y="420" width="24" height="12" rx="2" fill="#b5892a"/>
+        <path d="M340 68 L450 68 L450 208 Q450 300 340 358 Q230 300 230 208 L230 68 Z" fill="#b5892a"/>
+        <path d="M340 75 L443 75 L443 207 Q443 294 340 349 Q237 294 237 207 L237 75 Z" fill="#0d2240"/>
+        <line x1="237" y1="168" x2="443" y2="168" stroke="#b5892a" stroke-width="3"/>
+        <g transform="translate(340,258)"><line x1="0" y1="-32" x2="0" y2="32" stroke="#b5892a" stroke-width="2.5"/><path d="M0 -28 Q-36 -32 -52 -20 L-52 28 Q-36 18 0 22 Z" fill="none" stroke="#b5892a" stroke-width="2"/><path d="M0 -28 Q36 -32 52 -20 L52 28 Q36 18 0 22 Z" fill="none" stroke="#b5892a" stroke-width="2"/></g>
+        <g transform="translate(340,120)"><circle cx="0" cy="0" r="34" fill="none" stroke="#b5892a" stroke-width="2"/><ellipse cx="0" cy="0" rx="17" ry="34" fill="none" stroke="#b5892a" stroke-width="1.5"/><line x1="-34" y1="0" x2="34" y2="0" stroke="#b5892a" stroke-width="1.5"/><line x1="-30" y1="-17" x2="30" y2="-17" stroke="#b5892a" stroke-width="1.2"/><line x1="-30" y1="17" x2="30" y2="17" stroke="#b5892a" stroke-width="1.2"/><line x1="0" y1="-34" x2="0" y2="34" stroke="#b5892a" stroke-width="1.5"/></g>
+      </svg>
+      <div>
+        <div class="logo-name">American Allied University</div>
+        <div class="logo-sub">Online &middot; Global &middot; Career-Focused</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="programs.html">Academic Programs <span class="caret">&#9660;</span></a>
+        <div class="dropdown wide">
+          <div class="dropdown-cols">
+            <div class="dropdown-col"><div class="dropdown-col-label">Certificates &amp; Certifications</div>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Business &amp; Operations</div><div class="dl-desc">Project management, leadership, digital marketing</div></a>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Technology &amp; AI</div><div class="dl-desc">AI, data analytics, cybersecurity, Google Career Certificates</div></a>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Education &amp; Leadership</div><div class="dl-desc">Instructional skills, organizational management</div></a>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Healthcare &amp; Allied Health</div><div class="dl-desc">Health administration, patient care pathways</div></a>
+            </div>
+            <div class="dropdown-col"><div class="dropdown-col-label">Graduate Degrees (Planned)</div>
+              <a href="programs.html#grad" class="dropdown-link"><div class="dl-title">Master of Education (M.Ed.)</div><div class="dl-desc">Teaching, curriculum, educational leadership</div></a>
+              <a href="programs.html#grad" class="dropdown-link"><div class="dl-title">Master of Business Administration (MBA)</div><div class="dl-desc">Strategy, finance, operations, entrepreneurship</div></a>
+              <a href="programs.html#grad" class="dropdown-link"><div class="dl-title">Master of Organizational Leadership (MOL)</div><div class="dl-desc">Leadership development, change management</div></a>
+            </div>
+          </div>
+          <div class="dropdown-cta"><p>Not sure which program is right for you?</p><a href="admissions.html">Request Advising</a></div>
+        </div>
+      </li>
+      <li class="nav-item"><a href="about.html">About AAU <span class="caret">&#9660;</span></a>
+        <div class="dropdown">
+          <div class="dropdown-cols">
+            <div class="dropdown-col"><div class="dropdown-col-label">The Institution</div>
+              <a href="about.html" class="dropdown-link"><div class="dl-title">About American Allied University</div><div class="dl-desc">Who we are and what we stand for</div></a>
+              <a href="mission.html" class="dropdown-link"><div class="dl-title">Mission &amp; Vision</div><div class="dl-desc">Our purpose, values, and direction</div></a>
+            </div>
+            <div class="dropdown-col"><div class="dropdown-col-label">Connect</div>
+              <a href="contact.html" class="dropdown-link"><div class="dl-title">Contact Us</div><div class="dl-desc"><span class="__cf_email__" data-cfemail="cba2a5ada48baaa6aeb9a2a8aaa5aaa7a7a2aeafe5beb8">[email&#160;protected]</span></div></a>
+              <a href="admissions.html" class="dropdown-link"><div class="dl-title">Admissions</div><div class="dl-desc">Apply or request information</div></a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item"><a href="mission.html">Mission &amp; Vision</a></li>
+      <li class="nav-item"><a href="admissions.html">Become a Student</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="admissions.html" class="nav-apply">Apply Now</a>
+      <button class="nav-menu-btn" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
-</footer>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="programs.html" onclick="toggleMenu()">Academic Programs</a>
+  <a href="about.html" onclick="toggleMenu()">About AAU</a>
+  <a href="mission.html" onclick="toggleMenu()">Mission &amp; Vision</a>
+  <a href="admissions.html" onclick="toggleMenu()">Become a Student</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact Us</a>
+  <a href="admissions.html" class="mob-apply" onclick="toggleMenu()">Apply Now</a>
+</div>
 
-<script>
-function toggleMenu(){document.getElementById("mobileMenu").classList.toggle("open");}
-document.addEventListener("click",function(e){var m=document.getElementById("mobileMenu"),b=document.querySelector(".nav-menu-btn");if(m&&m.classList.contains("open")&&!m.contains(e.target)&&b&&!b.contains(e.target)){m.classList.remove("open");}});
-</script>
-</body>
-</html>
+<div class="page-hero">
+  <div class="page-hero-inner container">
+    <span class="sec-label">Admissions</span>
+    <h1>Begin Your <em>Application</em></h1>
+    <p>Apply to AAU — it's free and takes just a few minutes. Our admissions team will contact you within 2 business days with program details and next steps.</p>
+  </div>
+</div>
+<div class="breadcrumb"><div class="breadcrumb-inner"><a href="index.html">Home</a><span>/</span><span>Admissions</span></div></div>
+
+<section style="background:var(--off);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:start;">
+
+      <!-- FORM -->
+      <div style="background:var(--white);border:1px solid var(--border);border-top:4px solid var(--navy);padding:2.5rem;border-radius:2px;">
+        <h2 style="font-size:1.4rem;margin-bottom:0.4rem;">Request Information &amp; Apply</h2>
+        <p style="font-size:0.83rem;color:var(--muted);line-height:1.65;margin-bottom:1.75rem;">All required fields are marked *. Submitting this form does not guarantee enrollment.</p>
+        <div style="margin-bottom:1rem;"><label style="display:block;font-size:0.68rem;font-weight:700;color:var(--navy);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.4rem;">Full Name <span style="color:#dc2626;">*</span></label><input type="text" placeholder="First and last name" style="width:100%;padding:0.72rem 0.9rem;background:var(--off);border:1px solid var(--border);border-radius:4px;font-family:'Source Sans 3',sans-serif;font-size:0.88rem;color:var(--text);outline:none;"></div>
+        <div style="margin-bottom:1rem;"><label style="display:block;font-size:0.68rem;font-weight:700;color:var(--navy);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.4rem;">Email Address <span style="color:#dc2626;">*</span></label><input type="email" placeholder="your@email.com" style="width:100%;padding:0.72rem 0.9rem;background:var(--off);border:1px solid var(--border);border-radius:4px;font-family:'Source Sans 3',sans-serif;font-size:0.88rem;color:var(--text);outline:none;"></div>
+        <div style="margin-bottom:1rem;"><label style="display:block;font-size:0.68rem;font-weight:700;color:var(--navy);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.4rem;">Phone Number</label><input type="tel" placeholder="+1 (000) 000-0000" style="width:100%;padding:0.72rem 0.9rem;background:var(--off);border:1px solid var(--border);border-radius:4px;font-family:'Source Sans 3',sans-serif;font-size:0.88rem;color:var(--text);outline:none;"></div>
+        <div style="margin-bottom:1rem;"><label style="display:block;font-size:0.68rem;font-weight:700;color:var(--navy);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.4rem;">Country of Residence <span style="color:#dc2626;">*</span></label><input type="text" placeholder="e.g. United States, Kenya, Nigeria" style="width:100%;padding:0.72rem 0.9rem;background:var(--off);border:1px solid var(--border);border-radius:4px;font-family:'Source Sans 3',sans-serif;font-size:0.88rem;color:var(--text);outline:none;"></div>
+        <div style="margin-bottom:1rem;"><label style="display:block;font-size:0.68rem;font-weight:700;color:var(--navy);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.4rem;">Program of Interest <span style="color:#dc2626;">*</span></label>
+          <select style="width:100%;padding:0.72rem 0.9rem;background:var(--off);border:1px solid var(--border);border-radius:4px;font-family:'Source Sans 3',sans-serif;font-size:0.88rem;color:var(--text);outline:none;appearance:none;">
+            <option value="" disabled selected>Select a program</option>
+            <optgroup label="Available Now — Certificates">
+              <option>Business &amp; Operations (Certificate)</option>
+              <option>Technology &amp; AI (Certificate)</option>
+              <option>Education &amp; Leadership (Certificate)</option>
+              <option>Healthcare &amp; Allied Health (Certificate)</option>
+            </optgroup>
+            <optgroup label="Coming Later — Graduate Degrees">
+              <option>Master of Education — M.Ed. (Planned)</option>
+              <option>Master of Business Administration — MBA (Planned)</option>
+              <option>Master of Organizational Leadership — MOL (Planned)</option>
+            </optgroup>
+          </select>
+        </div>
+        <div style="margin-bottom:1rem;"><label style="display:block;font-size:0.68rem;font-weight:700;color:var(--navy);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.4rem;">Tell us about your goals</label><textarea placeholder="Briefly describe your background and what you hope to achieve." style="width:100%;padding:0.72rem 0.9rem;background:var(--off);border:1px solid var(--border);border-radius:4px;font-family:'Source Sans 3',sans-serif;font-size:0.88rem;color:var(--text);outline:none;resize:vertical;min-height:80px;"></textarea></div>
+        <div style="display:flex;align-items:flex-start;gap:0.75rem;margin:1.25rem 0;padding:1rem;background:var(--off);border:1px solid var(--border);border-radius:4px;">
+          <input type="checkbox" id="consent" style="width:15px;height:15px;flex-shrink:0;margin-top:2px;cursor:pointer;">
+          <label for="consent" style="font-size:0.73rem;color:var(--muted);line-height:1.55;cursor:pointer;">I consent to being contacted by American Allied University. I understand current programs are professional certificate programs. I have read and agree to the <a href="privacy.html" style="color:var(--navy);">Privacy Policy</a> and <a href="terms.html" style="color:var(--navy);">Terms of Use</a>.</label>
+        </div>
+        <button style="width:100%;padding:0.95rem;background:var(--navy);color:var(--white);font-family:'Source Sans 3',sans-serif;font-size:0.85rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;border:none;cursor:pointer;border-radius:3px;">Submit Application</button>
+        <p style="font-size:0.68rem;color:var(--muted);text-align:center;margin-top:0.85rem;">Your information is confidential. See our <a href="privacy.html" style="color:var(--navy);">Privacy Policy</a>.</p>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div>
+        <h3 style="margin-bottom:1.5rem;font-size:1.1rem;">What to Expect</h3>
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <div style="display:flex;gap:1rem;align-items:flex-start;padding:1.25rem 0;border-bottom:1px solid var(--border);"><div style="width:40px;height:40px;flex-shrink:0;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold-light);font-family:'Libre Baskerville',serif;font-weight:700;">1</div><div><h4 style="font-size:0.88rem;font-weight:700;color:var(--navy);margin-bottom:0.2rem;">Submit your free application</h4><p style="font-size:0.78rem;color:var(--muted);line-height:1.55;">No application fee. Takes just a few minutes to complete.</p></div></div>
+          <div style="display:flex;gap:1rem;align-items:flex-start;padding:1.25rem 0;border-bottom:1px solid var(--border);"><div style="width:40px;height:40px;flex-shrink:0;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold-light);font-family:'Libre Baskerville',serif;font-weight:700;">2</div><div><h4 style="font-size:0.88rem;font-weight:700;color:var(--navy);margin-bottom:0.2rem;">Hear from our admissions team</h4><p style="font-size:0.78rem;color:var(--muted);line-height:1.55;">We respond within 2 business days with program details and tuition.</p></div></div>
+          <div style="display:flex;gap:1rem;align-items:flex-start;padding:1.25rem 0;border-bottom:1px solid var(--border);"><div style="width:40px;height:40px;flex-shrink:0;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold-light);font-family:'Libre Baskerville',serif;font-weight:700;">3</div><div><h4 style="font-size:0.88rem;font-weight:700;color:var(--navy);margin-bottom:0.2rem;">Enroll and get started</h4><p style="font-size:0.78rem;color:var(--muted);line-height:1.55;">Upon enrollment you are automatically placed into your program via AAU's Coursera Classroom.</p></div></div>
+          <div style="display:flex;gap:1rem;align-items:flex-start;padding:1.25rem 0;"><div style="width:40px;height:40px;flex-shrink:0;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--white);font-family:'Libre Baskerville',serif;font-weight:700;">4</div><div><h4 style="font-size:0.88rem;font-weight:700;color:var(--navy);margin-bottom:0.2rem;">Learn on your schedule</h4><p style="font-size:0.78rem;color:var(--muted);line-height:1.55;">Self-paced, fully online. Study whenever and wherever works for you.</p></div></div>
+        </div>
+
+        <div style="margin-top:2rem;padding:1.5rem;background:var(--off);border:1px solid var(--border);border-radius:4px;">
+          <h4 style="font-family:'Libre Baskerville',serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:1rem;">Contact Admissions</h4>
+          <div style="font-size:0.8rem;color:var(--muted);margin-bottom:0.5rem;"><strong style="color:var(--navy);min-width:65px;display:inline-block;">Email:</strong> <a href="/cdn-cgi/l/email-protection#c1a8afa7ae81a0aca4b3a8a2a0afa0adada8a4a5efb4b2" style="color:var(--navy);"><span class="__cf_email__" data-cfemail="f0999e969fb0919d95829993919e919c9c999594de8583">[email&#160;protected]</span></a></div>
+          <div style="font-size:0.8rem;color:var(--muted);margin-bottom:0.5rem;"><strong style="color:var(--navy);min-width:65px;display:inline-block;">Website:</strong> <a href="https://americanallied.us" style="color:var(--navy);">americanallied.us</a></div>
+          <div style="font-size:0.8rem;color:var(--muted);"><strong style="color:var(--navy);min-width:65px;display:inline-block;">Location:</strong> Online · Global</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-name">American Allied University</div>
+      <div class="footer-brand-sub">Online &middot; Global</div>
+      <p class="footer-brand-desc">An online professional certificate provider delivering structured programs through a dedicated Coursera Classroom for Organizations.</p>
+      <p class="footer-brand-desc" style="margin-top:0.5rem;"><a href="/cdn-cgi/l/email-protection#87eee9e1e8c7e6eae2f5eee4e6e9e6ebebeee2e3a9f2f4" style="color:rgba(255,255,255,0.5);text-decoration:none;"><span class="__cf_email__" data-cfemail="751c1b131a35141810071c16141b1419191c10115b0006">[email&#160;protected]</span></a> &middot; <a href="https://americanallied.us" style="color:rgba(255,255,255,0.5);text-decoration:none;">americanallied.us</a></p>
+    </div>
+    <div class="footer-col"><h5>Programs</h5><ul>
+      <li><a href="programs.html#certs">Business Administration</a></li>
+      <li><a href="programs.html#certs">Technology &amp; AI</a></li>
+      <li><a href="programs.html#certs">Education &amp; Leadership</a></li>
+      <li><a href="programs.html#certs">Allied Health Administration</a></li>
+      <li><a href="programs.html#grad">Graduate Degrees (Planned)</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Institution</h5><ul>
+      <li><a href="about.html">About AAU</a></li>
+      <li><a href="mission.html">Mission &amp; Vision</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Legal</h5><ul>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
+      <li><a href="programs.html">Program Catalog</a></li>
+      <li><a href="/cdn-cgi/l/email-protection#5f363139301f3e323a2d363c3e313e3333363a3b712a2c">Email Us</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal">
+    <p>American Allied University is an online professional certificate and development program provider incorporated in the United States. Current offerings are certificate programs delivered through AAU's dedicated Coursera Classroom for Organizations. Graduate degree programs are planned for a future launch date. Certificate programs are not degree programs and credits may not transfer. Contact <a href="/cdn-cgi/l/email-protection#224b4c444d62434f47504b41434c434e4e4b47460c5751"><span class="__cf_email__" data-cfemail="325b5c545d72535f57405b51535c535e5e5b57561c4741">[email&#160;protected]</span></a> for full details.</p>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 American Allied University. All rights reserved. Online · Global.</span>
+    
+nav{background:var(--navy);height:72px;display:flex;align-items:center;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,0.2);}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between;width:100%;}
+.logo{display:flex;align-items:center;gap:0.85rem;text-decoration:none;}
+.logo-name{font-family:"Libre Baskerville",serif;font-size:0.95rem;font-weight:700;color:var(--white);line-height:1.2;}
+.logo-sub{font-size:0.55rem;font-weight:400;color:rgba(255,255,255,0.45);letter-spacing:0.12em;text-transform:uppercase;}
+.nav-links{display:none;list-style:none;gap:0.25rem;}
+.nav-item{position:relative;list-style:none;}
+.nav-item>a{font-size:0.78rem;font-weight:600;color:rgba(255,255,255,0.82);text-decoration:none;letter-spacing:0.03em;display:flex;align-items:center;gap:0.3rem;padding:0.4rem 0.6rem;border-radius:3px;transition:all 0.2s;white-space:nowrap;}
+.nav-item>a:hover,.nav-item:hover>a{color:var(--gold-light);background:rgba(255,255,255,0.06);}
+.nav-item>a .caret{font-size:0.5rem;opacity:0.6;transition:transform 0.2s;}
+.nav-item:hover>a .caret{transform:rotate(180deg);}
+.dropdown{position:absolute;top:calc(100% + 8px);left:0;background:var(--white);border-top:3px solid var(--gold);box-shadow:0 12px 40px rgba(13,34,64,0.15);min-width:560px;opacity:0;visibility:hidden;transform:translateY(8px);transition:all 0.22s ease;z-index:300;}
+.dropdown.wide{min-width:660px;}
+.nav-item:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+.dropdown-cols{display:grid;grid-template-columns:1fr 1fr;}
+.dropdown-col{padding:1.5rem;border-right:1px solid var(--border);}
+.dropdown-col:last-child{border-right:none;}
+.dropdown-col-label{font-size:0.58rem;font-weight:700;color:var(--gold);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:0.85rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);}
+.dropdown-link{display:block;text-decoration:none;padding:0.45rem 0;border-bottom:1px solid rgba(0,0,0,0.04);transition:all 0.15s;}
+.dropdown-link:last-child{border-bottom:none;}
+.dropdown-link:hover{padding-left:4px;}
+.dropdown-link:hover .dl-title{color:var(--gold);}
+.dl-title{font-size:0.82rem;font-weight:600;color:var(--navy);line-height:1.3;transition:color 0.15s;}
+.dl-desc{font-size:0.7rem;color:var(--muted);line-height:1.4;margin-top:0.1rem;}
+.dropdown-cta{background:var(--gold-pale);border-top:1px solid var(--border);padding:0.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.dropdown-cta p{font-size:0.76rem;font-weight:600;color:var(--navy);}
+.dropdown-cta a{font-size:0.7rem;font-weight:700;color:var(--white);background:var(--navy);padding:0.38rem 0.9rem;border-radius:3px;text-decoration:none;transition:background 0.2s;white-space:nowrap;}
+.dropdown-cta a:hover{background:var(--gold);}
+.nav-right{display:flex;align-items:center;gap:0.75rem;}
+.nav-apply{padding:0.52rem 1.25rem;background:var(--gold);color:var(--white);font-size:0.76rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:background 0.2s;white-space:nowrap;}
+.nav-apply:hover{background:var(--gold-light);}
+.nav-menu-btn{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
+.nav-menu-btn span{display:block;width:22px;height:2px;background:rgba(255,255,255,0.8);transition:all 0.3s;}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:var(--navy);z-index:199;flex-direction:column;padding:1.5rem 2rem;overflow-y:auto;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{display:block;font-size:1.05rem;font-weight:500;color:rgba(255,255,255,0.85);text-decoration:none;padding:1rem 0;border-bottom:1px solid rgba(255,255,255,0.08);transition:color 0.2s;}
+.mobile-menu a:hover{color:var(--gold-light);}
+.mob-apply{margin-top:1.5rem;display:block;padding:1rem;background:var(--gold);color:var(--white);text-align:center;font-weight:700;font-size:0.88rem;letter-spacing:0.08em;text-transform:uppercase;border-radius:3px;}
+/* PAGE HERO */
+.page-hero{background:var(--navy);padding:4rem 0 3.5rem;position:relative;overflow:hidden;}
+.page-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(13,34,64,0.92),rgba(13,34,64,0.92)),url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80") center/cover no-repeat;}
+.page-hero-inner{position:relative;z-index:1;}
+.page-hero .sec-label{color:var(--gold-light);}
+.page-hero h1{color:var(--white);margin-bottom:1rem;}
+.page-hero h1 em{color:var(--gold-light);}
+.page-hero p{font-size:1rem;font-weight:300;color:rgba(255,255,255,0.72);line-height:1.8;max-width:580px;}
+/* BREADCRUMB */
+.breadcrumb{background:var(--gold-pale);border-bottom:1px solid var(--border);padding:0.6rem 0;}
+.breadcrumb-inner{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;gap:0.5rem;font-size:0.72rem;color:var(--muted);}
+.breadcrumb a{color:var(--navy);text-decoration:none;font-weight:500;}
+.breadcrumb a:hover{color:var(--gold);}
+.breadcrumb span{color:var(--muted);}
+/* BUTTONS */
+.btn-navy{display:inline-flex;align-items:center;gap:0.4rem;padding:0.85rem 2rem;background:var(--navy);color:var(--white);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;border:2px solid var(--navy);transition:all 0.2s;}
+.btn-navy:hover{background:var(--navy-mid);}
+.btn-gold{display:inline-flex;align-items:center;gap:0.4rem;padding:0.85rem 2rem;background:var(--gold);color:var(--white);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;border:2px solid var(--gold);transition:all 0.2s;}
+.btn-gold:hover{background:var(--gold-light);border-color:var(--gold-light);}
+.btn-outline{display:inline-flex;align-items:center;gap:0.4rem;padding:0.85rem 2rem;background:transparent;color:var(--navy);font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:3px;border:2px solid var(--navy);transition:all 0.2s;}
+.btn-outline:hover{background:var(--navy);color:var(--white);}
+/* CARDS */
+.card{background:var(--white);border:1px solid var(--border);border-top:4px solid var(--navy);padding:2rem;border-radius:2px;transition:all 0.3s;}
+.card:hover{box-shadow:0 8px 28px rgba(13,34,64,0.1);transform:translateY(-3px);border-top-color:var(--gold);}
+.card-gold{border-top-color:var(--gold);}
+/* FOOTER */
+footer{background:#060f1c;padding:4rem 0 0;}
+.footer-grid{max-width:1200px;margin:0 auto;padding:0 2rem 3rem;display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:3rem;border-bottom:1px solid rgba(255,255,255,0.08);}
+.footer-brand-name{font-family:"Libre Baskerville",serif;font-size:0.95rem;font-weight:700;color:var(--white);margin-bottom:0.25rem;}
+.footer-brand-sub{font-size:0.58rem;color:rgba(255,255,255,0.28);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.85rem;}
+.footer-brand-desc{font-size:0.76rem;color:rgba(255,255,255,0.4);line-height:1.75;max-width:280px;}
+.footer-col h5{font-size:0.6rem;font-weight:700;color:var(--gold-light);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1rem;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:0.5rem;}
+.footer-col a{font-size:0.76rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;line-height:1.4;}
+.footer-col a:hover{color:var(--gold-light);}
+.footer-legal{max-width:1200px;margin:0 auto;padding:1.5rem 2rem;border-bottom:1px solid rgba(255,255,255,0.06);}
+.footer-legal p{font-size:0.68rem;color:rgba(255,255,255,0.28);line-height:1.65;}
+.footer-legal a{color:rgba(255,255,255,0.4);text-decoration:underline;}
+.footer-bottom{max-width:1200px;margin:0 auto;padding:1.25rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.footer-copy{font-size:0.65rem;color:rgba(255,255,255,0.25);}
+.footer-links-row{display:flex;gap:1.5rem;flex-wrap:wrap;}
+.footer-links-row a{font-size:0.65rem;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s;}
+.footer-links-row a:hover{color:var(--gold-light);}
+/* RESPONSIVE */
+@media(min-width:768px){.nav-links{display:flex;}.nav-menu-btn{display:none;}}
+@media(max-width:960px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.nav-inner{padding:0 1.25rem;}.container{padding:0 1.25rem;}section{padding:3.5rem 0;}.footer-grid{grid-template-columns:1fr;gap:2rem;padding-bottom:2rem;}.footer-bottom{flex-direction:column;text-align:center;}.footer-links-row{justify-content:center;}}
+</style>
+
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <svg width="48" height="48" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;">
+        <path d="M290 420 Q260 380 240 340 Q225 305 218 270 Q214 245 215 220" stroke="#b5892a" stroke-width="2" fill="none"/>
+        <ellipse cx="268" cy="388" rx="14" ry="7" fill="#b5892a" transform="rotate(-40 268 388)"/>
+        <ellipse cx="252" cy="362" rx="13" ry="6" fill="#b5892a" transform="rotate(-50 252 362)"/>
+        <ellipse cx="240" cy="335" rx="13" ry="6" fill="#b5892a" transform="rotate(-55 240 335)"/>
+        <ellipse cx="230" cy="308" rx="12" ry="6" fill="#b5892a" transform="rotate(-60 230 308)"/>
+        <ellipse cx="278" cy="375" rx="12" ry="6" fill="#c9a84c" transform="rotate(-20 278 375)"/>
+        <ellipse cx="262" cy="350" rx="11" ry="5" fill="#c9a84c" transform="rotate(-25 262 350)"/>
+        <path d="M390 420 Q420 380 440 340 Q455 305 462 270 Q466 245 465 220" stroke="#b5892a" stroke-width="2" fill="none"/>
+        <ellipse cx="412" cy="388" rx="14" ry="7" fill="#b5892a" transform="rotate(40 412 388)"/>
+        <ellipse cx="428" cy="362" rx="13" ry="6" fill="#b5892a" transform="rotate(50 428 362)"/>
+        <ellipse cx="440" cy="335" rx="13" ry="6" fill="#b5892a" transform="rotate(55 440 335)"/>
+        <ellipse cx="450" cy="308" rx="12" ry="6" fill="#b5892a" transform="rotate(60 450 308)"/>
+        <ellipse cx="402" cy="375" rx="12" ry="6" fill="#c9a84c" transform="rotate(20 402 375)"/>
+        <ellipse cx="418" cy="350" rx="11" ry="5" fill="#c9a84c" transform="rotate(25 418 350)"/>
+        <rect x="328" y="420" width="24" height="12" rx="2" fill="#b5892a"/>
+        <path d="M340 68 L450 68 L450 208 Q450 300 340 358 Q230 300 230 208 L230 68 Z" fill="#b5892a"/>
+        <path d="M340 75 L443 75 L443 207 Q443 294 340 349 Q237 294 237 207 L237 75 Z" fill="#0d2240"/>
+        <line x1="237" y1="168" x2="443" y2="168" stroke="#b5892a" stroke-width="3"/>
+        <g transform="translate(340,258)"><line x1="0" y1="-32" x2="0" y2="32" stroke="#b5892a" stroke-width="2.5"/><path d="M0 -28 Q-36 -32 -52 -20 L-52 28 Q-36 18 0 22 Z" fill="none" stroke="#b5892a" stroke-width="2"/><path d="M0 -28 Q36 -32 52 -20 L52 28 Q36 18 0 22 Z" fill="none" stroke="#b5892a" stroke-width="2"/></g>
+        <g transform="translate(340,120)"><circle cx="0" cy="0" r="34" fill="none" stroke="#b5892a" stroke-width="2"/><ellipse cx="0" cy="0" rx="17" ry="34" fill="none" stroke="#b5892a" stroke-width="1.5"/><line x1="-34" y1="0" x2="34" y2="0" stroke="#b5892a" stroke-width="1.5"/><line x1="-30" y1="-17" x2="30" y2="-17" stroke="#b5892a" stroke-width="1.2"/><line x1="-30" y1="17" x2="30" y2="17" stroke="#b5892a" stroke-width="1.2"/><line x1="0" y1="-34" x2="0" y2="34" stroke="#b5892a" stroke-width="1.5"/></g>
+      </svg>
+      <div>
+        <div class="logo-name">American Allied University</div>
+        <div class="logo-sub">Online &middot; Global &middot; Career-Focused</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="programs.html">Academic Programs <span class="caret">&#9660;</span></a>
+        <div class="dropdown wide">
+          <div class="dropdown-cols">
+            <div class="dropdown-col"><div class="dropdown-col-label">Certificates &amp; Certifications</div>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Business &amp; Operations</div><div class="dl-desc">Project management, leadership, digital marketing</div></a>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Technology &amp; AI</div><div class="dl-desc">AI, data analytics, cybersecurity, Google Career Certificates</div></a>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Education &amp; Leadership</div><div class="dl-desc">Instructional skills, organizational management</div></a>
+              <a href="programs.html#certs" class="dropdown-link"><div class="dl-title">Healthcare &amp; Allied Health</div><div class="dl-desc">Health administration, patient care pathways</div></a>
+            </div>
+            <div class="dropdown-col"><div class="dropdown-col-label">Graduate Degrees (Planned)</div>
+              <a href="programs.html#grad" class="dropdown-link"><div class="dl-title">Master of Education (M.Ed.)</div><div class="dl-desc">Teaching, curriculum, educational leadership</div></a>
+              <a href="programs.html#grad" class="dropdown-link"><div class="dl-title">Master of Business Administration (MBA)</div><div class="dl-desc">Strategy, finance, operations, entrepreneurship</div></a>
+              <a href="programs.html#grad" class="dropdown-link"><div class="dl-title">Master of Organizational Leadership (MOL)</div><div class="dl-desc">Leadership development, change management</div></a>
+            </div>
+          </div>
+          <div class="dropdown-cta"><p>Not sure which program is right for you?</p><a href="admissions.html">Request Advising</a></div>
+        </div>
+      </li>
+      <li class="nav-item"><a href="about.html">About AAU <span class="caret">&#9660;</span></a>
+        <div class="dropdown">
+          <div class="dropdown-cols">
+            <div class="dropdown-col"><div class="dropdown-col-label">The Institution</div>
+              <a href="about.html" class="dropdown-link"><div class="dl-title">About American Allied University</div><div class="dl-desc">Who we are and what we stand for</div></a>
+              <a href="mission.html" class="dropdown-link"><div class="dl-title">Mission &amp; Vision</div><div class="dl-desc">Our purpose, values, and direction</div></a>
+            </div>
+            <div class="dropdown-col"><div class="dropdown-col-label">Connect</div>
+              <a href="contact.html" class="dropdown-link"><div class="dl-title">Contact Us</div><div class="dl-desc"><span class="__cf_email__" data-cfemail="97fef9f1f8d7f6faf2e5fef4f6f9f6fbfbfef2f3b9e2e4">[email&#160;protected]</span></div></a>
+              <a href="admissions.html" class="dropdown-link"><div class="dl-title">Admissions</div><div class="dl-desc">Apply or request information</div></a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item"><a href="mission.html">Mission &amp; Vision</a></li>
+      <li class="nav-item"><a href="admissions.html">Become a Student</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="admissions.html" class="nav-apply">Apply Now</a>
+      <button class="nav-menu-btn" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="programs.html" onclick="toggleMenu()">Academic Programs</a>
+  <a href="about.html" onclick="toggleMenu()">About AAU</a>
+  <a href="mission.html" onclick="toggleMenu()">Mission &amp; Vision</a>
+  <a href="admissions.html" onclick="toggleMenu()">Become a Student</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact Us</a>
+  <a href="admissions.html" class="mob-apply" onclick="toggleMenu()">Apply Now</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner container">
+    <span class="sec-label">About AAU</span>
+    <h1>A University Built for <em>Today's Learner</em></h1>
+    <p>American Allied University is an online professional certificate provider incorporated in the United States, committed to making quality education accessible worldwide.</p>
+  </div>
+</div>
+<div class="breadcrumb"><div class="breadcrumb-inner"><a href="index.html">Home</a><span>/</span><span>About AAU</span></div></div>
+
+<section style="background:var(--white);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:start;">
+      <div>
+        <span class="sec-label">Who We Are</span>
+        <h2 style="margin-bottom:1.25rem;">Global Higher Education. Built for Everyone.</h2>
+        <p style="font-size:0.92rem;color:#3a3a50;line-height:1.85;margin-bottom:1.1rem;">American Allied University was incorporated in the United States in 2024, founded by an entrepreneur and educator committed to expanding access to quality education for working professionals and global learners everywhere.</p>
+        <p style="font-size:0.92rem;color:#3a3a50;line-height:1.85;margin-bottom:1.1rem;">AAU currently delivers higher education programs through our dedicated Coursera Classroom for Organizations — a curated, structured learning environment where students are enrolled directly into tailored program paths.</p>
+        <p style="font-size:0.92rem;color:#3a3a50;line-height:1.85;margin-bottom:1.1rem;">Graduate degree programs including the MBA, M.Ed., and MOL are in development for a future launch date.</p>
+        <div style="border-left:3px solid var(--gold);padding:1.1rem 1.5rem;background:var(--gold-pale);margin:2rem 0;border-radius:0 4px 4px 0;">
+          <p style="font-family:'Libre Baskerville',serif;font-size:1rem;font-style:italic;color:var(--navy);line-height:1.65;">"We believe quality education should be accessible regardless of geography, schedule, or circumstance."</p>
+        </div>
+        <a href="mission.html" class="btn-navy">Our Mission &amp; Vision &rarr;</a>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;">
+        <div style="background:var(--off);padding:2rem;text-align:center;"></div>
+        <div style="background:var(--off);padding:2rem;text-align:center;"><div style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:var(--navy);">400+</div><div style="font-size:0.68rem;color:var(--muted);margin-top:0.3rem;letter-spacing:0.08em;text-transform:uppercase;">Certifications Available</div></div>
+        <div style="background:var(--off);padding:2rem;text-align:center;"><div style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:var(--navy);">100%</div><div style="font-size:0.68rem;color:var(--muted);margin-top:0.3rem;letter-spacing:0.08em;text-transform:uppercase;">Online Delivery</div></div>
+        <div style="background:var(--off);padding:2rem;text-align:center;"><div style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:var(--navy);">Global</div><div style="font-size:0.68rem;color:var(--muted);margin-top:0.3rem;letter-spacing:0.08em;text-transform:uppercase;">Student Community</div></div>
+        <div style="background:var(--gold-pale);padding:1.5rem;text-align:center;grid-column:span 2;border-top:1px solid var(--border);"><div style="font-size:0.88rem;font-weight:700;color:var(--navy);">Coursera Classroom for Organizations</div><div style="font-size:0.72rem;color:var(--muted);margin-top:0.25rem;">Dedicated learning platform for AAU students</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--off);">
+  <div class="container">
+    <span class="sec-label">Our Values</span>
+    <h2 style="margin-bottom:2.5rem;">What Drives Us</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;">
+      <div class="card card-gold" style="text-align:center;"><h3 style="margin-bottom:0.5rem;">Global Access</h3><p style="font-size:0.82rem;color:var(--muted);line-height:1.65;">Serving learners from across the world — no campus, no borders.</p></div>
+      <div class="card card-gold" style="text-align:center;"><h3 style="margin-bottom:0.5rem;">Academic Rigor</h3><p style="font-size:0.82rem;color:var(--muted);line-height:1.65;">Programs built to the highest standards of quality and relevance.</p></div>
+      <div class="card card-gold" style="text-align:center;"><h3 style="margin-bottom:0.5rem;">True Flexibility</h3><p style="font-size:0.82rem;color:var(--muted);line-height:1.65;">Self-paced learning designed around your life and career schedule.</p></div>
+      <div class="card card-gold" style="text-align:center;"><h3 style="margin-bottom:0.5rem;">Career Outcomes</h3><p style="font-size:0.82rem;color:var(--muted);line-height:1.65;">Curriculum aligned to in-demand skills employers actually need.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-name">American Allied University</div>
+      <div class="footer-brand-sub">Online &middot; Global</div>
+      <p class="footer-brand-desc">An online professional certificate provider delivering structured programs through a dedicated Coursera Classroom for Organizations.</p>
+      <p class="footer-brand-desc" style="margin-top:0.5rem;"><a href="/cdn-cgi/l/email-protection#543d3a323b14353931263d37353a3538383d31307a2127" style="color:rgba(255,255,255,0.5);text-decoration:none;"><span class="__cf_email__" data-cfemail="b8d1d6ded7f8d9d5ddcad1dbd9d6d9d4d4d1dddc96cdcb">[email&#160;protected]</span></a> &middot; <a href="https://americanallied.us" style="color:rgba(255,255,255,0.5);text-decoration:none;">americanallied.us</a></p>
+    </div>
+    <div class="footer-col"><h5>Programs</h5><ul>
+      <li><a href="programs.html#certs">Business Administration</a></li>
+      <li><a href="programs.html#certs">Technology &amp; AI</a></li>
+      <li><a href="programs.html#certs">Education &amp; Leadership</a></li>
+      <li><a href="programs.html#certs">Allied Health Administration</a></li>
+      <li><a href="programs.html#grad">Graduate Degrees (Planned)</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Institution</h5><ul>
+      <li><a href="about.html">About AAU</a></li>
+      <li><a href="mission.html">Mission &amp; Vision</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Legal</h5><ul>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
+      <li><a href="programs.html">Program Catalog</a></li>
+      <li><a href="/cdn-cgi/l/email-protection#82ebece4edc2e3efe7f0ebe1e3ece3eeeeebe7e6acf7f1">Email Us</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-legal">
+    <p>American Allied University is an online professional certificate and development program provider incorporated in the United States. Current offerings are certificate programs delivered through AAU's dedicated Coursera Classroom for Organizations. Graduate degree programs are planned for a future launch date. Certificate programs are not degree programs and credits may not transfer. Contact <a href="/cdn-cgi/l/email-protection#a7cec9c1c8e7c6cac2d5cec4c6c9c6cbcbcec2c389d2d4"><span class="__cf_email__" data-cfemail="0861666e674869656d7a616b6966696464616d6c267d7b">[email&#160;protected]</span></a> for full details.</p>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 American Allied University. All rights reserved. Online · Global.</span>
+    <div class="footer-links-row">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="con
