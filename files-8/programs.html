@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Academic Programs | American Allied University</title>
+<meta name="description" content="AAU offers professional certificates, Google certifications, and is developing graduate degree programs including MBA, M.Ed., and MOL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --navy:#0d2240;
+  --navy-r:#112a50;
+  --gold:#b5892a;
+  --gold-bg:#c9a84c;
+  --white:#ffffff;
+  --off:#f5f3ef;
+  --text:#1a1a2e;
+  --muted:#5e6e8a;
+  --border:#dde3ec;
+}
+html{scroll-behavior:smooth;scroll-padding-top:76px;}
+body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden;}
+.wrap{max-width:1100px;margin:0 auto;padding:0 2.5rem;}
+
+h1,h2,h3{font-family:'Cormorant Garamond',serif;color:var(--navy);line-height:1.18;}
+h1{font-size:clamp(3.6rem,7.5vw,6rem);font-weight:400;letter-spacing:-0.01em;line-height:1.05;}
+h1 em{font-style:italic;color:var(--gold-bg);font-weight:400;}
+h2{font-size:clamp(2rem,3.5vw,3rem);font-weight:500;letter-spacing:-0.01em;}
+h2 em{font-style:italic;}
+h3{font-size:1.1rem;font-weight:600;}
+p{color:var(--muted);line-height:1.75;font-size:0.92rem;}
+
+.eyebrow{
+  display:flex;align-items:center;gap:0.65rem;
+  font-size:0.62rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--gold-bg);margin-bottom:1rem;
+}
+.eyebrow::before{content:'';display:block;width:24px;height:1.5px;background:var(--gold-bg);}
+
+/* ═══ NAV ═══ */
+nav{
+  background:var(--navy);height:76px;
+  display:flex;align-items:center;
+  position:sticky;top:0;z-index:100;
+}
+.nav-inner{
+  width:100%;max-width:100%;padding:0 2.5rem;
+  display:flex;align-items:center;justify-content:space-between;gap:2rem;
+}
+.logo{display:flex;align-items:center;gap:0.75rem;text-decoration:none;flex-shrink:0;}
+.logo-badge{
+  width:52px;height:52px;border:2px solid var(--gold-bg);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  background:rgba(201,168,76,0.08);
+}
+.logo-text{display:flex;flex-direction:column;line-height:1.2;}
+.logo-name{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--white);letter-spacing:0.01em;}
+.logo-sub{font-size:0.46rem;color:rgba(255,255,255,0.35);letter-spacing:0.18em;text-transform:uppercase;margin-top:1px;}
+.nav-links{display:none;list-style:none;align-items:center;gap:0;}
+.nav-links a{font-size:0.8rem;font-weight:400;color:rgba(255,255,255,0.72);text-decoration:none;padding:0.35rem 0.75rem;transition:color 0.15s;}
+.nav-links a:hover{color:var(--white);}
+/* Gold filled CTA — exactly like SAP "Donate Now" */
+.nav-cta{
+  padding:0.55rem 1.3rem;background:var(--gold-bg);color:var(--navy);
+  font-size:0.8rem;font-weight:600;border-radius:4px;text-decoration:none;
+  white-space:nowrap;transition:background 0.15s;flex-shrink:0;
+  font-family:'DM Sans',sans-serif;
+}
+.nav-cta:hover{background:var(--gold);}
+.mob-btn{display:flex;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+.mob-btn span{display:block;width:20px;height:1.5px;background:rgba(255,255,255,0.8);}
+.mob-nav{display:none;position:fixed;top:76px;left:0;right:0;bottom:0;background:var(--navy);z-index:99;flex-direction:column;padding:2rem 2.5rem;}
+.mob-nav.open{display:flex;}
+.mob-nav a{display:block;font-size:1rem;color:rgba(255,255,255,0.8);text-decoration:none;padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.08);}
+.mob-nav a:hover{color:var(--gold-bg);}
+.mob-nav .mc{margin-top:1.5rem;display:block;text-align:center;padding:0.9rem;background:var(--gold-bg);color:var(--navy);font-weight:700;font-size:0.88rem;border-radius:4px;}
+
+/* ═══ HERO — SPLIT LAYOUT LIKE SAP ═══
+   Left ~60%: deep navy #0d2240, content
+   Right ~40%: slightly lighter navy #112a50, circles
+   Diagonal clip between them
+*/
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;align-items:center;
+  background:var(--navy);
+  overflow:hidden;
+}
+/* Right panel — lighter navy */
+.hero-right-panel{
+  position:absolute;right:0;top:0;bottom:0;width:42%;
+  background:var(--navy-r);
+  clip-path:polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
+}
+/* Geometric circles on right — exactly like SAP */
+.hero-circles{
+  position:absolute;right:0;top:0;bottom:0;width:42%;
+  display:flex;align-items:center;justify-content:center;
+  pointer-events:none;
+}
+.c-outer{
+  width:340px;height:340px;border-radius:50%;
+  border:1px solid rgba(181,137,42,0.18);
+  position:absolute;display:flex;align-items:center;justify-content:center;
+}
+.c-inner{
+  width:200px;height:200px;border-radius:50%;
+  background:rgba(13,34,64,0.6);
+  border:1px solid rgba(181,137,42,0.25);
+}
+/* Hero content */
+.hero-content{
+  position:relative;z-index:2;
+  padding:0 2.5rem;
+  max-width:58%;
+}
+.hero h1{color:var(--white);margin-bottom:1.5rem;}
+.hero h1 em{font-style:italic;color:var(--gold-bg);font-weight:400;}
+.hero .eyebrow{color:var(--gold-bg);margin-bottom:1.4rem;}
+.hero .eyebrow::before{background:var(--gold-bg);}
+.hero-desc{color:rgba(255,255,255,0.65);font-size:0.96rem;line-height:1.8;margin-bottom:2.25rem;max-width:460px;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+
+/* SAP buttons exactly:
+   Primary = gold fill, navy text
+   Secondary = dark outline (#0d2240 border), dark text on navy bg = visible as slightly lighter border
+*/
+.btn{
+  display:inline-flex;align-items:center;gap:0.35rem;
+  padding:0.78rem 1.65rem;font-size:0.82rem;font-weight:600;
+  border-radius:4px;text-decoration:none;transition:all 0.18s;
+  border:2px solid transparent;font-family:'DM Sans',sans-serif;cursor:pointer;
+  letter-spacing:0.01em;
+}
+.btn-gold{background:var(--gold-bg);color:var(--navy);border-color:var(--gold-bg);}
+.btn-gold:hover{background:var(--gold);border-color:var(--gold);}
+/* SAP "Partner With Us" = dark navy background, lighter border, white text */
+.btn-dark{background:rgba(13,34,64,0.0);color:var(--white);border-color:rgba(255,255,255,0.35);}
+.btn-dark:hover{border-color:rgba(255,255,255,0.7);}
+/* Light page buttons */
+.btn-navy{background:var(--navy);color:var(--white);border-color:var(--navy);}
+.btn-navy:hover{background:#163055;}
+.btn-outline{background:transparent;color:var(--navy);border-color:var(--border);}
+.btn-outline:hover{border-color:var(--navy);}
+
+/* ═══ STATS — GOLD BACKGROUND like SAP ═══ */
+.stats-bar{background:var(--gold-bg);padding:2.25rem 0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);}
+.stat{text-align:center;padding:0.5rem 1rem;}
+.stat+.stat{border-left:1px solid rgba(13,34,64,0.2);}
+/* SAP stats: big serif navy numbers, uppercase labels in navy */
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:700;color:var(--navy);line-height:1;}
+.stat-l{font-size:0.6rem;font-weight:500;color:rgba(13,34,64,0.7);text-transform:uppercase;letter-spacing:0.14em;margin-top:0.4rem;}
+
+/* SECTIONS */
+section{padding:5rem 0;}
+.bg-off{background:var(--off);}
+.sec-hd{margin-bottom:3rem;}
+.sec-hd h2{margin-bottom:0.6rem;}
+.sec-hd p{max-width:520px;}
+
+/* PILLAR CARDS */
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;}
+.pillar{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:2rem;transition:box-shadow 0.2s,transform 0.2s;}
+.pillar:hover{box-shadow:0 4px 24px rgba(13,34,64,0.09);transform:translateY(-2px);}
+.pillar-n{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:700;color:rgba(181,137,42,0.22);line-height:1;margin-bottom:0.75rem;}
+.pillar h3{margin-bottom:0.4rem;font-size:1rem;}
+.pillar p{font-size:0.84rem;line-height:1.65;}
+
+/* MISSION BLOCK */
+.mission-wrap{background:var(--navy);padding:4rem;border-left:4px solid var(--gold-bg);}
+.mission-wrap .eyebrow{color:var(--gold-bg);}
+.mission-wrap .eyebrow::before{background:var(--gold-bg);}
+.mission-wrap h2{color:var(--white);margin-bottom:1.25rem;}
+.mission-wrap .bp{color:rgba(255,255,255,0.6);font-size:0.92rem;line-height:1.8;margin-bottom:0.85rem;}
+.mquote{
+  font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;
+  color:rgba(255,255,255,0.9);
+  border-left:2px solid rgba(201,168,76,0.5);padding-left:1.25rem;
+  margin:1.5rem 0;line-height:1.7;
+}
+.mattr{font-size:0.66rem;color:rgba(255,255,255,0.3);letter-spacing:0.14em;text-transform:uppercase;margin-top:0.4rem;}
+
+/* CARDS */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.25rem;}
+.card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:1.75rem;transition:box-shadow 0.2s;}
+.card:hover{box-shadow:0 4px 18px rgba(13,34,64,0.08);}
+.card-tag{font-size:0.58rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-bg);display:block;margin-bottom:0.6rem;}
+.card h3{font-size:0.95rem;margin-bottom:0.4rem;}
+.card p{font-size:0.82rem;line-height:1.65;margin-bottom:1rem;}
+.clink{font-size:0.75rem;font-weight:600;color:var(--navy);text-decoration:none;border-bottom:2px solid var(--gold-bg);padding-bottom:1px;}
+.clink:hover{color:var(--gold-bg);}
+
+/* PAGE HERO */
+.ph{background:var(--navy);padding:4rem 0 3.5rem;position:relative;overflow:hidden;}
+.ph::after{
+  content:'';position:absolute;right:5%;top:50%;transform:translateY(-50%);
+  width:280px;height:280px;border-radius:50%;
+  border:1px solid rgba(181,137,42,0.15);
+}
+.ph .eyebrow{color:var(--gold-bg);}
+.ph .eyebrow::before{background:var(--gold-bg);}
+.ph h1{color:var(--white);font-size:clamp(2.8rem,5vw,4.2rem);font-weight:400;margin-bottom:0.75rem;position:relative;z-index:1;}
+.ph p{color:rgba(255,255,255,0.58);font-size:0.95rem;max-width:520px;position:relative;z-index:1;}
+.ph .eyebrow{position:relative;z-index:1;}
+
+/* BREADCRUMB */
+.bc-bar{background:var(--white);border-bottom:1px solid var(--border);padding:0.55rem 0;}
+.bc{display:flex;align-items:center;gap:0.4rem;font-size:0.7rem;color:var(--muted);}
+.bc a{color:var(--navy);text-decoration:none;font-weight:600;}
+.bc a:hover{color:var(--gold-bg);}
+
+/* CTA BAND */
+.cta-band{background:var(--navy);padding:5rem 0;text-align:center;}
+.cta-band .eyebrow{color:var(--gold-bg);justify-content:center;}
+.cta-band .eyebrow::before{background:var(--gold-bg);}
+.cta-band h2{color:var(--white);margin-bottom:0.6rem;}
+.cta-band p{color:rgba(255,255,255,0.58);max-width:420px;margin:0 auto 2rem;font-size:0.92rem;}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+
+/* FORM */
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.fg{display:flex;flex-direction:column;gap:0.3rem;}
+.fg label{font-size:0.66rem;font-weight:700;color:var(--navy);letter-spacing:0.1em;text-transform:uppercase;}
+.fg input,.fg select,.fg textarea{padding:0.65rem 0.85rem;border:1px solid var(--border);border-radius:4px;font-family:'DM Sans',sans-serif;font-size:0.87rem;color:var(--text);outline:none;transition:border-color 0.18s;}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--navy);}
+.fg textarea{resize:vertical;min-height:90px;}
+.consent{display:flex;gap:0.65rem;align-items:flex-start;padding:0.85rem 1rem;background:var(--off);border:1px solid var(--border);border-radius:4px;margin:0.75rem 0;}
+.consent input{width:14px;height:14px;flex-shrink:0;margin-top:2px;cursor:pointer;}
+.consent label{font-size:0.71rem;color:var(--muted);line-height:1.55;cursor:pointer;}
+.consent label a{color:var(--navy);}
+
+/* STEPS */
+.steps{display:flex;flex-direction:column;}
+.step{display:flex;gap:1rem;align-items:flex-start;padding:1.25rem 0;border-bottom:1px solid var(--border);}
+.step:last-child{border-bottom:none;}
+.sn{width:36px;height:36px;flex-shrink:0;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold-bg);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:0.85rem;}
+.sn.g{background:var(--gold-bg);color:var(--navy);}
+.step h3{font-size:0.92rem;margin-bottom:0.2rem;}
+.step p{font-size:0.8rem;}
+
+/* CONTACT ITEMS */
+.cit{display:flex;flex-direction:column;gap:0.75rem;}
+.ci{padding:1.25rem 1.5rem;border:1px solid var(--border);border-left:3px solid var(--gold-bg);border-radius:0 6px 6px 0;}
+.ci h3{font-size:0.88rem;margin-bottom:0.25rem;}
+.ci a{font-size:0.85rem;color:var(--navy);text-decoration:none;font-weight:600;}
+.ci p{font-size:0.76rem;margin-top:0.15rem;}
+
+/* VALUES */
+.vals{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.25rem;}
+.val{padding:1.5rem;border:1px solid var(--border);border-radius:6px;}
+.val-n{font-size:0.58rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-bg);display:block;margin-bottom:0.5rem;}
+.val h3{font-size:0.92rem;margin-bottom:0.3rem;}
+.val p{font-size:0.8rem;line-height:1.65;}
+
+/* ABOUT */
+.a2{display:grid;grid-template-columns:1.2fr 1fr;gap:5rem;align-items:center;}
+.qb{border-left:3px solid var(--gold-bg);padding:1rem 1.25rem;background:#fdf8ee;border-radius:0 4px 4px 0;margin:1.5rem 0;}
+.qb p{font-family:'Cormorant Garamond',serif;font-size:0.92rem;font-style:italic;color:var(--navy);line-height:1.65;}
+.mg{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden;}
+.m{background:var(--white);padding:1.75rem;text-align:center;}
+.m-n{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--navy);}
+.m-l{font-size:0.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-top:0.25rem;}
+.m.acc{background:#fdf8ee;grid-column:span 2;}
+.m.acc .m-n{font-size:0.88rem;color:var(--navy);}
+
+/* FOOTER */
+footer{background:#06101e;padding:3.5rem 0 0;}
+.fg2{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.07);}
+.fb-n{font-family:'Cormorant Garamond',serif;font-size:0.88rem;font-weight:700;color:var(--white);display:block;margin-bottom:0.2rem;}
+.fb-s{font-size:0.47rem;color:rgba(255,255,255,0.22);letter-spacing:0.18em;text-transform:uppercase;display:block;margin-bottom:0.8rem;}
+.fb-d{font-size:0.74rem;color:rgba(255,255,255,0.34);line-height:1.7;max-width:250px;}
+.fc h5{font-size:0.56rem;font-weight:700;color:var(--gold-bg);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:0.85rem;}
+.fc ul{list-style:none;display:flex;flex-direction:column;gap:0.4rem;}
+.fc a{font-size:0.74rem;color:rgba(255,255,255,0.36);text-decoration:none;transition:color 0.15s;}
+.fc a:hover{color:var(--gold-bg);}
+.fl{padding:1rem 0;border-bottom:1px solid rgba(255,255,255,0.05);}
+.fl p{font-size:0.63rem;color:rgba(255,255,255,0.2);line-height:1.65;}
+.fl a{color:rgba(255,255,255,0.28);}
+.fb{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding:1.1rem 0;}
+.fc2{font-size:0.6rem;color:rgba(255,255,255,0.2);}
+.fl2{display:flex;gap:1.25rem;}
+.fl2 a{font-size:0.6rem;color:rgba(255,255,255,0.25);text-decoration:none;transition:color 0.15s;}
+.fl2 a:hover{color:var(--gold-bg);}
+
+@media(min-width:768px){.nav-links{display:flex;}.mob-btn{display:none;}}
+@media(max-width:900px){.a2{grid-template-columns:1fr;gap:3rem;}.fg2{grid-template-columns:1fr 1fr;}.f2{grid-template-columns:1fr;}}
+@media(max-width:700px){
+  .wrap{padding:0 1.5rem;}
+  section{padding:3.5rem 0;}
+  .hero-content{padding:4rem 1.5rem 4.5rem;max-width:100%;}
+  .hero-right-panel,.hero-circles{display:none;}
+  .stats-row{grid-template-columns:1fr 1fr;}
+  .ph{padding:3rem 0 2.5rem;}
+  .mission-wrap{padding:2.5rem 1.5rem;}
+  .fg2{grid-template-columns:1fr;gap:2rem;padding-bottom:2rem;}
+  .fb{flex-direction:column;text-align:center;}
+  .fl2{justify-content:center;}
+  .vals{grid-template-columns:1fr 1fr;}
+  .pillars{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-badge"><svg width="46" height="46" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg">
+  <path d="M290 420 Q260 380 240 340 Q225 305 218 270 Q214 245 215 220" stroke="#b5892a" stroke-width="2.5" fill="none"/>
+  <ellipse cx="268" cy="388" rx="14" ry="7" fill="#b5892a" transform="rotate(-40 268 388)"/>
+  <ellipse cx="252" cy="362" rx="13" ry="6" fill="#b5892a" transform="rotate(-50 252 362)"/>
+  <ellipse cx="240" cy="335" rx="13" ry="6" fill="#b5892a" transform="rotate(-55 240 335)"/>
+  <ellipse cx="230" cy="308" rx="12" ry="6" fill="#b5892a" transform="rotate(-60 230 308)"/>
+  <path d="M390 420 Q420 380 440 340 Q455 305 462 270 Q466 245 465 220" stroke="#b5892a" stroke-width="2.5" fill="none"/>
+  <ellipse cx="412" cy="388" rx="14" ry="7" fill="#b5892a" transform="rotate(40 412 388)"/>
+  <ellipse cx="428" cy="362" rx="13" ry="6" fill="#b5892a" transform="rotate(50 428 362)"/>
+  <ellipse cx="440" cy="335" rx="13" ry="6" fill="#b5892a" transform="rotate(55 440 335)"/>
+  <ellipse cx="450" cy="308" rx="12" ry="6" fill="#b5892a" transform="rotate(60 450 308)"/>
+  <rect x="328" y="420" width="24" height="12" rx="2" fill="#b5892a"/>
+  <path d="M340 68 L450 68 L450 208 Q450 300 340 358 Q230 300 230 208 L230 68 Z" fill="#b5892a"/>
+  <path d="M340 75 L443 75 L443 207 Q443 294 340 349 Q237 294 237 207 L237 75 Z" fill="rgba(255,255,255,0.1)"/>
+  <line x1="237" y1="168" x2="443" y2="168" stroke="#b5892a" stroke-width="3"/>
+  <g transform="translate(340,258)">
+    <line x1="0" y1="-32" x2="0" y2="32" stroke="#b5892a" stroke-width="2.5"/>
+    <path d="M0 -28 Q-36 -32 -52 -20 L-52 28 Q-36 18 0 22 Z" fill="none" stroke="#b5892a" stroke-width="2"/>
+    <path d="M0 -28 Q36 -32 52 -20 L52 28 Q36 18 0 22 Z" fill="none" stroke="#b5892a" stroke-width="2"/>
+  </g>
+  <g transform="translate(340,120)">
+    <circle cx="0" cy="0" r="34" fill="none" stroke="#b5892a" stroke-width="2"/>
+    <ellipse cx="0" cy="0" rx="17" ry="34" fill="none" stroke="#b5892a" stroke-width="1.5"/>
+    <line x1="-34" y1="0" x2="34" y2="0" stroke="#b5892a" stroke-width="1.5"/>
+    <line x1="-30" y1="-17" x2="30" y2="-17" stroke="#b5892a" stroke-width="1.2"/>
+    <line x1="-30" y1="17" x2="30" y2="17" stroke="#b5892a" stroke-width="1.2"/>
+    <line x1="0" y1="-34" x2="0" y2="34" stroke="#b5892a" stroke-width="1.5"/>
+  </g>
+</svg></div>
+      <div class="logo-text">
+        <span class="logo-name">American Allied University</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="about.html">About AAU</a></li>
+      <li><a href="mission.html">Mission &amp; Vision</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <a href="admissions.html" class="nav-cta">Apply Now</a>
+      <button class="mob-btn" onclick="document.getElementById('mm').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mob-nav" id="mm">
+  <a href="programs.html" onclick="this.closest('.mob-nav').classList.remove('open')">Academic Programs</a>
+  <a href="about.html" onclick="this.closest('.mob-nav').classList.remove('open')">About AAU</a>
+  <a href="mission.html" onclick="this.closest('.mob-nav').classList.remove('open')">Mission &amp; Vision</a>
+  <a href="contact.html" onclick="this.closest('.mob-nav').classList.remove('open')">Contact</a>
+  <a href="admissions.html" class="mc" onclick="this.closest('.mob-nav').classList.remove('open')">Apply Now</a>
+</div>
+
+<div class="ph">
+  <div class="wrap">
+    <div class="eyebrow">Academic Programs</div>
+    <h1>Programs of Study</h1>
+    <p>AAU offers professional certificates and Google certifications now, with graduate degree programs available now.</p>
+  </div>
+</div></div>
+
+<section id="certs" class="bg-off">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="eyebrow">Available Now</div>
+      <h2>Certificates &amp; Certifications</h2>
+      <p>Delivered through AAU's dedicated Coursera Classroom for Organizations. Students are placed into curated learning paths upon enrollment.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><span class="card-tag">Certificate Program</span><h3>Business &amp; Operations</h3><p>Business operations, project management, entrepreneurship, leadership, and digital marketing skills.</p></div>
+      <div class="card"><span class="card-tag">Certificate Program</span><h3>Technology &amp; AI</h3><p>AI fundamentals, data analytics, cybersecurity, IT, and Google Career Certificates.</p></div>
+      <div class="card"><span class="card-tag">Certificate Program</span><h3>Education &amp; Leadership</h3><p>Leadership, instructional skills, organizational management, and professional learning.</p></div>
+      <div class="card"><span class="card-tag">Certificate Program</span><h3>Healthcare &amp; Allied Health</h3><p>Healthcare administration, patient care coordination, and allied health pathways.</p></div>
+    </div>
+    <div style="background:var(--navy);padding:2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;margin-top:2rem;border-radius:6px;">
+      <div><h3 style="color:var(--white);font-size:1rem;margin-bottom:0.3rem;">400+ Certificates &amp; Google Certifications</h3><p style="font-size:0.82rem;color:rgba(255,255,255,0.55);">Google Career Certificates, Project Management, Data Analytics, Cybersecurity, AI and more.</p></div>
+      <a href="admissions.html" class="btn btn-gold">Enroll Now &rarr;</a>
+    </div>
+    <p style="font-size:0.7rem;color:var(--muted);margin-top:0.75rem;">Certificate programs are not degree programs. Credits may not transfer. Contact <a href="/cdn-cgi/l/email-protection#adc4c3cbc2edccc0c8dfc4ceccc3ccc1c1c4c8c983d8de"><span class="__cf_email__" data-cfemail="3c55525a537c5d51594e555f5d525d505055595812494f">[email&#160;protected]</span></a> for full details.</p>
+  </div>
+</section>
+
+<section id="grad">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="eyebrow">Planned Graduate Degrees</div>
+      <h2>Graduate Degree Programs</h2>
+      <p>AAU is building a graduate learning model for working professionals and organizational leaders. These programs are available.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;">
+      <div class="card" style="border-top:3px solid var(--navy);"><span class="card-tag" style="color:var(--muted);">Graduate Degree</span><h3>Master of Education (M.Ed.)</h3><p>For educators and instructional leaders seeking expertise in teaching, leadership, curriculum, and educational innovation.</p><span style="display:inline-block;margin-top:0.75rem;padding:0.18rem 0.65rem;background:var(--off);border:1px solid var(--border);font-size:0.6rem;font-weight:600;color:var(--muted);border-radius:2px;">Now Enrolling</span></div>
+      <div class="card" style="border-top:3px solid var(--navy);"><span class="card-tag" style="color:var(--muted);">Graduate Degree</span><h3>Master of Business Administration (MBA)</h3><p>Advanced knowledge in strategy, management, operations, entrepreneurship, finance, and organizational growth.</p><span style="display:inline-block;margin-top:0.75rem;padding:0.18rem 0.65rem;background:var(--off);border:1px solid var(--border);font-size:0.6rem;font-weight:600;color:var(--muted);border-radius:2px;">Now Enrolling</span></div>
+      <div class="card" style="border-top:3px solid var(--navy);"><span class="card-tag" style="color:var(--muted);">Graduate Degree</span><h3>Master of Organizational Leadership (MOL)</h3><p>Leadership development, change management, communication, and executive decision-making for organizational leaders.</p><span style="display:inline-block;margin-top:0.75rem;padding:0.18rem 0.65rem;background:var(--off);border:1px solid var(--border);font-size:0.6rem;font-weight:600;color:var(--muted);border-radius:2px;">Now Enrolling</span></div>
+    </div>
+    <p style="font-size:0.7rem;color:var(--muted);margin-top:1.25rem;">Graduate degree programs are being offered now. Contact <a href="/cdn-cgi/l/email-protection#84edeae2ebc4e5e9e1f6ede7e5eae5e8e8ede1e0aaf1f7"><span class="__cf_email__" data-cfemail="86efe8e0e9c6e7ebe3f4efe5e7e8e7eaeaefe3e2a8f3f5">[email&#160;protected]</span></a> to be notified when programs become available.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fg2">
+      <div>
+        <span class="fb-n">American Allied University</span>
+        <p class="fb-d">A global institution of higher education delivering quality programs through technology partnerships with Coursera and Google, serving working professionals worldwide.</p>
+        <p class="fb-d" style="margin-top:0.5rem;"><a href="/cdn-cgi/l/email-protection#94fdfaf2fbd4f5f9f1e6fdf7f5faf5f8f8fdf1f0bae1e7"><span class="__cf_email__" data-cfemail="2b42454d446b4a464e5942484a454a4747424e4f055e58">[email&#160;protected]</span></a></p>
+      </div>
+      <div class="fc"><h5>Programs</h5><ul>
+        <li><a href="programs.html#certs">Business &amp; Operations</a></li>
+        <li><a href="programs.html#certs">Technology &amp; AI</a></li>
+        <li><a href="programs.html#certs">Education &amp; Leadership</a></li>
+        <li><a href="programs.html#certs">Allied Health</a></li>
+        <li><a href="programs.html#grad">Graduate Degrees</a></li>
+      </ul></div>
+      <div class="fc"><h5>Institution</h5><ul>
+        <li><a href="about.html">About AAU</a></li>
+        <li><a href="mission.html">Mission &amp; Vision</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul></div>
+      <div class="fc"><h5>Legal</h5><ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="programs.html">Program Catalog</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#d7beb9b1b897b6bab2a5beb4b6b9b6bbbbbeb2b3f9a2a4"><span class="__cf_email__" data-cfe
