@@ -115,3 +115,44 @@ body{font-family:var(--font);line-height:1.65}h1,h2,h3{letter-spacing:normal}h1,
 .aau-student-hero>.aau-hero-inner{min-height:0;padding-block:72px}
 .aau-student-hero .aau-landing-copy{background:none;width:100%;max-width:720px;padding:0;border-radius:0}
 @media(max-width:640px){.aau-student-hero>.aau-hero-inner{padding:0}.aau-student-hero .aau-landing-copy{padding:36px 24px 40px;background:none}}
+
+/* Hero decoration: compass mark and rings in place of the photograph. */
+.aau-student-hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 78% 50%,transparent 0 179px,rgba(227,181,101,.34) 180px 181px,transparent 182px 259px,rgba(227,181,101,.2) 260px 261px,transparent 262px 349px,rgba(227,181,101,.12) 350px 351px,transparent 352px),linear-gradient(100deg,#3d1a66 0 42%,#4f1d77 100%)}
+.aau-student-hero::after{content:"";position:absolute;top:50%;left:78%;width:250px;height:250px;transform:translate(-50%,-50%);pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23e3b565' stroke-width='1.5'%3E%3Ccircle cx='100' cy='100' r='96'/%3E%3Ccircle cx='100' cy='100' r='70' stroke-opacity='.5'/%3E%3C/g%3E%3Cpath fill='%23e3b565' d='M100 8l14 78 78 14-78 14-14 78-14-78-78-14 78-14z'/%3E%3Cpath fill='%23e3b565' fill-opacity='.45' d='M100 100l34-34-12 46zM100 100l-34 34 12-46zM100 100l34 34-46-12zM100 100l-34-34 46 12z'/%3E%3Ccircle cx='100' cy='100' r='7' fill='%233d1a66'/%3E%3C/svg%3E") center/contain no-repeat}
+.aau-student-hero .aau-landing-copy h1 em{font-style:italic;color:var(--gold,#e3b565)}
+@media(max-width:950px){.aau-student-hero::before{background:radial-gradient(circle at 100% 0,transparent 0 119px,rgba(227,181,101,.3) 120px 121px,transparent 122px 189px,rgba(227,181,101,.18) 190px 191px,transparent 192px),linear-gradient(100deg,#3d1a66 0 42%,#4f1d77 100%)}.aau-student-hero::after{top:0;left:100%;width:150px;height:150px;opacity:.9}}
+
+/* Menu drop-downs, status strip, feature grid and question tabs. */
+.uni-dd{position:relative}
+.uni-dd-menu{display:none;position:absolute;top:100%;left:-18px;z-index:30;min-width:270px;padding:10px 0;background:#fff;border:1px solid var(--line);border-top:3px solid var(--purple);box-shadow:0 14px 30px rgba(36,27,43,.14)}
+.uni-dd:hover>.uni-dd-menu,.uni-dd:focus-within>.uni-dd-menu{display:block}
+.uni-masthead .uni-links .uni-dd-menu a{display:block;padding:10px 18px;font-size:.875rem;font-weight:500;white-space:normal;color:var(--ink)}
+.uni-masthead .uni-links .uni-dd-menu a:hover,.uni-masthead .uni-links .uni-dd-menu a:focus{background:var(--soft);color:var(--purple)}
+.uni-dd>a[aria-haspopup]{padding-right:14px}
+.uni-dd>a[aria-haspopup]:before{content:"";position:absolute;right:0;top:50%;width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-70%) rotate(45deg)}
+.uni-mobile-group summary{padding:12px 0;font-weight:600;cursor:pointer}
+.uni-mobile-group a{padding-left:16px;font-weight:400}
+.aau-status-strip{border-bottom:1px solid var(--line);background:#fff}
+.aau-status-strip dl{display:flex;flex-wrap:wrap;align-items:center;gap:14px 44px;margin-block:0;padding-block:18px;min-height:0;justify-content:flex-start}
+.aau-status-strip dl>div{display:block}
+.aau-status-strip dt{font-size:.6875rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.aau-status-strip dd{margin:2px 0 0;font-size:.9375rem;font-weight:600;color:var(--ink)}
+.aau-status-strip a{margin-left:auto;font-size:.8125rem;text-decoration:underline;text-underline-offset:3px}
+.aau-why{background:var(--soft)}
+.aau-why-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.aau-why-grid article{background:#fff;padding:30px 28px 32px}
+.aau-why-grid svg{width:34px;height:34px;color:var(--purple)}
+.aau-why-grid h3{margin:16px 0 8px;font-size:1.125rem}
+.aau-why-grid p{font-size:.9375rem;color:var(--muted);line-height:1.65}
+.aau-faq-tabs{display:flex;flex-wrap:wrap;gap:10px}
+.aau-faq-tabs>input{position:absolute;opacity:0;pointer-events:none}
+.aau-faq-tabs>label{padding:10px 16px;border:1px solid var(--line);background:#fff;color:var(--purple);font-size:.875rem;font-weight:600;cursor:pointer}
+.aau-faq-tabs>input:checked+label{background:var(--purple);color:#fff;border-color:var(--purple)}
+.aau-faq-tabs>input:focus-visible+label{outline:3px solid var(--gold);outline-offset:2px}
+.aau-faq-panel{display:none;flex:1 0 100%;margin-top:22px}
+.aau-faq-tabs>input:nth-of-type(1):checked~.aau-faq-panel:nth-of-type(1),.aau-faq-tabs>input:nth-of-type(2):checked~.aau-faq-panel:nth-of-type(2),.aau-faq-tabs>input:nth-of-type(3):checked~.aau-faq-panel:nth-of-type(3),.aau-faq-tabs>input:nth-of-type(4):checked~.aau-faq-panel:nth-of-type(4),.aau-faq-tabs>input:nth-of-type(5):checked~.aau-faq-panel:nth-of-type(5){display:block}
+.aau-band-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.aau-contact-band .aau-secondary-action{color:#fff;text-decoration:underline;text-underline-offset:4px;font-size:.875rem}
+@media(max-width:950px){.aau-why-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.aau-status-strip a{margin-left:0;flex-basis:100%}}
+@media(max-width:640px){.aau-why-grid{grid-template-columns:minmax(0,1fr)}.aau-status-strip dl{gap:12px 28px}.aau-status-strip dl>div{flex:1 0 40%}}
+.aau-why .aau-program-intro{margin-inline:0;text-align:left;max-width:60ch}
