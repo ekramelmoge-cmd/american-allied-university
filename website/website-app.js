@@ -6,7 +6,7 @@ function websiteLocation(){
 }
 function renderWebsite(){
  const {parts,query}=websiteLocation();const [next,id,section]=parts;
- if(['info','inquiries'].includes(next)){location.replace('https://aau-learning-campus.ekramelmoge.chatgpt.site/'+location.hash);return;}
+ 
  const campus=['dashboard','courses','course','grades','inbox','calendar','people','studio','offerings'];
  if(campus.includes(next)){location.replace('https://aau-learning-campus.ekramelmoge.chatgpt.site/sovora'+location.hash);return;}
  route=!next?'university':universityRoutes.includes(next)?next:'not-found';
